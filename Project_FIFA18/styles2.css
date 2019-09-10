@@ -1,0 +1,245 @@
+body {
+	font-family: Lato,'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	fill: #242424;
+	text-align: left;
+	cursor: default;
+	
+}
+
+.row {
+	padding: 30px;
+	padding-left: 160px;
+}
+
+.display {
+	float: left;
+  	width:100%;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*.cardcolumn {
+  float: left;
+  width: 32%;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .cardcolumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}*/
+
+.cardrow {
+	padding: 0px;
+}
+
+#card1 {
+  float: left;
+  width: 20%;
+	border-top: solid 2.5px #0fe3ab;
+  padding: 10px;
+  margin-left: 140px;
+  text-align: center;
+  /*background-color: #f1f1f1;*/
+}
+
+#card2 {
+  float: left;
+  width: 20%;
+	border-top: solid 2.5px #ffd427;
+  padding: 10px;
+  margin-left: 140px;
+  text-align: center;
+  /*background-color: #f1f1f1;*/
+}
+
+#card3 {
+  float: left;
+  width: 20%;
+	border-top: solid 2.5px #f15a24;
+  padding: 10px;
+  margin-left: 140px;
+  text-align: center;
+  /*background-color: #f1f1f1;*/
+}
+.card p {
+	padding-top:5px;
+	font:bold 100% Lato
+}
+
+h3 {
+	margin: 0px;
+	font-size: 20px;
+}
+
+p {
+	margin: 1px;
+	text-align: left;
+	text-shadow: none;
+	font-size: 15px;
+}
+
+.radarChart
+{
+	float: right;
+    width: 50%;
+}
+
+.searchEngine {
+  	width:100%;
+  	padding: 50px;
+}
+
+.filter {
+	float: left;
+	margin: 130px;
+	padding: 25px;
+		width:25%;
+	border:2px solid #fdc500
+	
+}
+
+.table {
+
+    width: 35%;
+    /* margin: 100px 290px 0px 290px; */
+    /* padding: 0px 200px 0px 200px; */
+     margin-left: auto; 
+     margin-right: auto; 
+    font-size: 15px;
+    overflow-y: scroll;
+    height: 300px;
+		border-radius: 10px;
+		color:white;
+		text-align:center;
+
+}
+
+table{
+	border-collapse:separate; 
+	border-spacing:15px 15px; 
+}
+.applybutton{
+  	margin: 50 50px 0px 0px;
+	padding: 5px;
+	font-size: 15px;
+
+}
+
+#applybtn {
+	padding:10px;
+	background:transparent;
+	border-radius:3px;
+	border:1px solid white;
+	font-weight:bold;
+	color:white;
+	outline:none;
+	display:block;
+	font-size:11px;
+	margin: 30px auto;
+}
+
+.filterRow {
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+}
+
+#filterName, #filterClub, #age1, #age2, #filterNation, #filterRole, #overall1, #overall2{
+	float: right;
+}
+
+#age1,#age2,#overall1,#overall2 {
+	width: 40px;
+	margin-right: 30px; 
+}
+
+
+#clearBtn {
+	float: right;
+	padding:10px;
+	background:transparent;
+	border-radius:3px;
+	border:1px solid white;
+	font-weight:bold;
+	color:white;
+	outline:none;
+	font-size:11px;
+}
+
+.legend {
+	font-family: 'Raleway', sans-serif;
+	fill: white;
+}
+
+.tooltip {
+	fill: #333333;
+}
+
+#cardtitle{
+	color:#0fe3ab;
+	font:bold 165% Lato;
+	text-transform:uppercase;
+	letter-spacing:0.3px;
+	padding: 15px 0px;
+}
+
+#cardtitle2{
+	color:#ffd427;
+	font:bold 165% Lato;
+	text-transform:uppercase;
+	letter-spacing:0.3px;
+	padding: 15px 0px;
+}
+#cardtitle3{
+	color:#f15a24;
+	font:bold 165% Lato;
+	text-transform:uppercase;
+	letter-spacing:0.3px;
+	padding: 15px 0px;
+}
+tr{
+	padding-top:15px;
+}
+
+#particles-js {
+  position: absolute;
+  top:0;
+  width: 100%;
+  height:1500px !important;
+  background-color: rgba(40,40,64,0.8);
+  background-position: 50% 50%;
+  z-index:-1;
+}
+
+#navigation #overall:hover{
+	background:#0fe3ab;
+	transition: background-color .2s ease-in-out;
+}
+
+#navigation #overall:hover svg path{
+	fill:#212236;
+	transition: fill .2s ease-in-out;
+}
+
+.overall{
+	margin-right:15px;
+	border: 1.5px solid #0fe3ab; 
+	padding: 9px;
+}
+
+#tooltipstatistics2{
+	color: #0fe3ab;
+	width: 100px;
+	margin-left: -50px;
+}

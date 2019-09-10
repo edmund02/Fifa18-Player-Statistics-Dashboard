@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+		<title>Player Comparison</title>
+
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js -->
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://unpkg.com/d3-simple-slider"></script>
+		<link rel="stylesheet" href="styles2.css">
+		<link rel="stylesheet" href="styles.css">
+		<script type="text/javascript" src="particles.min.js"></script>
+	</head>
+	<body>
+		<div id="particles-js"></div>
+		<div id="navigation" style="width:150px;padding-top:20px;padding-left:20px;display:flex;flex-direction:row;position:absolute;top:0">
+				<a href="index.html" class="home tooltip" id="home">
+						<span class="tooltiptext" id="tooltiphome">Home</span>
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 486.988 486.988" style="enable-background:new 0 0 486.988 486.988;" xml:space="preserve">
+						<g>
+							<g>
+								<path d="M16.822,284.968h39.667v158.667c0,9.35,7.65,17,17,17h116.167c9.35,0,17-7.65,17-17V327.468h70.833v116.167
+									c0,9.35,7.65,17,17,17h110.5c9.35,0,17-7.65,17-17V284.968h48.167c6.8,0,13.033-4.25,15.583-10.483
+									c2.55-6.233,1.133-13.6-3.683-18.417L260.489,31.385c-6.517-6.517-17.283-6.8-23.8-0.283L5.206,255.785
+									c-5.1,4.817-6.517,12.183-3.967,18.7C3.789,281.001,10.022,284.968,16.822,284.968z M248.022,67.368l181.333,183.6h-24.367
+									c-9.35,0-17,7.65-17,17v158.667h-76.5V310.468c0-9.35-7.65-17-17-17H189.656c-9.35,0-17,7.65-17,17v116.167H90.489V267.968
+									c0-9.35-7.65-17-17-17H58.756L248.022,67.368z"/>
+							</g>
+						</g>
+					</svg>
+				</a>
+				<a href="overall.html" class="overall tooltip" id="overall">
+						<span class="tooltiptext" id="tooltipstatistics2">Overall Statistics</span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="40%">
+							<path d="M501.333,490.667H10.667C4.779,490.667,0,495.445,0,501.333C0,507.221,4.779,512,10.667,512h490.667    c5.888,0,10.667-4.779,10.667-10.667C512,495.445,507.221,490.667,501.333,490.667z" fill="#0fe3ab"/>
+							<path d="M96,362.667H32c-5.888,0-10.667,4.779-10.667,10.667v128C21.333,507.221,26.112,512,32,512h64    c5.888,0,10.667-4.779,10.667-10.667v-128C106.667,367.445,101.888,362.667,96,362.667z M85.333,490.667H42.667V384h42.667    V490.667z" fill="#0fe3ab"/>
+							<path d="M224,256h-64c-5.888,0-10.667,4.779-10.667,10.667v234.667c0,5.888,4.779,10.667,10.667,10.667h64    c5.888,0,10.667-4.779,10.667-10.667V266.667C234.667,260.779,229.888,256,224,256z M213.333,490.667h-42.667V277.333h42.667    V490.667z" fill="#0fe3ab"/>
+							<path d="M352,298.667h-64c-5.888,0-10.667,4.779-10.667,10.667v192c0,5.888,4.779,10.667,10.667,10.667h64    c5.888,0,10.667-4.779,10.667-10.667v-192C362.667,303.445,357.888,298.667,352,298.667z M341.333,490.667h-42.667V320h42.667    V490.667z" fill="#0fe3ab"/>
+							<path d="M480,170.667h-64c-5.888,0-10.667,4.779-10.667,10.667v320c0,5.888,4.779,10.667,10.667,10.667h64    c5.888,0,10.667-4.779,10.667-10.667v-320C490.667,175.445,485.888,170.667,480,170.667z M469.333,490.667h-42.667V192h42.667    V490.667z" fill="#0fe3ab"/>
+							<path d="M64,192c-23.531,0-42.667,19.136-42.667,42.667c0,23.531,19.136,42.667,42.667,42.667    c23.531,0,42.667-19.136,42.667-42.667C106.667,211.136,87.531,192,64,192z M64,256c-11.776,0-21.333-9.579-21.333-21.333    c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333C85.333,246.421,75.776,256,64,256z" fill="#0fe3ab"/>
+							<path d="M192,85.333c-23.531,0-42.667,19.136-42.667,42.667c0,23.531,19.136,42.667,42.667,42.667s42.667-19.136,42.667-42.667    C234.667,104.469,215.531,85.333,192,85.333z M192,149.333c-11.776,0-21.333-9.579-21.333-21.333    c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333C213.333,139.755,203.776,149.333,192,149.333z" fill="#0fe3ab"/>
+							<path d="M320,128c-23.531,0-42.667,19.136-42.667,42.667c0,23.531,19.136,42.667,42.667,42.667    c23.531,0,42.667-19.136,42.667-42.667C362.667,147.136,343.531,128,320,128z M320,192c-11.776,0-21.333-9.579-21.333-21.333    c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333C341.333,182.421,331.776,192,320,192z" fill="#0fe3ab"/>
+							<path d="M448,0c-23.531,0-42.667,19.136-42.667,42.667c0,23.531,19.136,42.667,42.667,42.667    c23.531,0,42.667-19.136,42.667-42.667C490.667,19.136,471.531,0,448,0z M448,64c-11.776,0-21.333-9.579-21.333-21.333    c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333C469.333,54.421,459.776,64,448,64z" fill="#0fe3ab"/>
+							<path d="M432.939,57.728c-4.16-4.16-10.923-4.16-15.083,0l-82.773,82.773c-4.16,4.16-4.16,10.923,0,15.083    c2.091,2.069,4.821,3.115,7.552,3.115c2.709,0,5.44-1.024,7.531-3.115l82.773-82.773    C437.099,68.651,437.099,61.888,432.939,57.728z" fill="#0fe3ab"/>
+							<path d="M294.208,146.048l-68.523-19.541c-5.739-1.664-11.563,1.664-13.163,7.339c-1.621,5.675,1.664,11.563,7.317,13.184    l68.523,19.541c0.981,0.277,1.963,0.405,2.923,0.405c4.651,0,8.917-3.051,10.261-7.744    C303.168,153.579,299.883,147.669,294.208,146.048z" fill="#0fe3ab"/>
+							<path d="M175.36,141.291c-3.669-4.608-10.368-5.355-14.976-1.707l-80.427,64.128c-4.608,3.691-5.376,10.389-1.685,14.997    c2.112,2.645,5.227,4.011,8.341,4.011c2.325,0,4.672-0.768,6.635-2.304l80.427-64.128    C178.283,152.597,179.051,145.899,175.36,141.291z" fill="#0fe3ab"/>
+					</svg>
+				</a>
+			</div>
+			<h1 class="overalltitle" style="color:#0fe3ab">PLAYER COMPARISON</h1>
+		<div class="row">
+			<div class="cardrow"></div>
+			<div class="chart"></div>
+			<!-- <div class="searchEngine" id="searchEngine"> -->
+				<div class="filter">
+					<h2 style="color:#fdc500;text-align:center;padding-bottom:25px;">Search Engine</h2>
+					<form>
+					  	   
+					</form>
+				</div>
+			
+	</div>
+		<div class="table" id="table"></div>
+				<div class="applybutton"><button type="button" id="applybtn">Apply</button></div>
+		<script src="radarChart.js"></script>	
+		<script>
+      
+      /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+      /* Updated for d3.js v4 by Ingo Kleiber <ingo@kleiber.me> */
+      
+
+
+			//////////////////////// Set-Up ////////////////////////////// 
+
+
+
+			var columns = ["Role", "Name", "Overall", "Age", "Club", "Nationality"]
+			var clicks = {Role: 0, Name: 0, Overall: 0, Age: 0, Club: 0, Nationality: 0, Value: 0, Wage: 0};
+
+
+			var margin = {top: 100, right: 100, bottom: 100, left: 100},
+				width = Math.min(600, window.innerWidth - 10) - margin.left - margin.right,
+				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+					
+			var rowConverter = function(d) {
+				return {
+				Id: d.Id, //No conversion
+				Name: d.Name,
+				Overall: parseInt(d.Overall),
+				Potential: parseInt(d.Potential),
+				Role: d.Role,
+				Position: d.Position,
+				Age: parseInt(d.Age),
+				Nationality: d.Nationality,
+				Club: d.Club,
+				Value: d.Value,
+				Wage: d.Wage,
+				Pace: parseInt(d.Pace),
+				Shot: parseInt(d.Shot),
+				Pass: parseInt(d.Pass),
+				Dribble: parseInt(d.Dribble),
+				Defend: parseInt(d.Defend),
+				Physical: parseInt(d.Physical),
+				checker: false
+				};
+			}
+
+			// var dataset = [];
+			var raw = [];
+			var tabledata = [];
+			var clubs = [];
+			var selectedTick = [];
+			var ageValue = [16,47]
+			var round = d3.format('.0f')
+
+			// Initialize the button
+
+			d3.csv("data/Fifa18_Edmund2.csv", rowConverter, function(data) {
+				var subset = data;
+				var getfields = {};
+				// raw=data;
+				// for (i = 0; i < 2; i++) {
+				// 	var stat = [];
+				// 	stat.push({axis: "Pace/Diving", value: Math.ceil(Math.random() * 10)})
+				// 	stat.push({axis: "Shot/Handling", value: Math.ceil(Math.random() * 10)}) 
+				// 	stat.push({axis: "Pass/Kicking", value: Math.ceil(Math.random() * 10)}) 
+				// 	stat.push({axis: "Dribble/Reflexes", value: Math.ceil(Math.random() * 10)})  
+				// 	stat.push({axis: "Defend/Speed", value: Math.ceil(Math.random() * 10)})
+				// 	stat.push({axis: "Physical/Positioning", value: Math.ceil(Math.random() * 10)})
+
+				// 	dataset.push(stat);
+				// }
+				
+				// // d3.select(".row").append("div").attr("class","radarChart")
+
+	   //          var color = d3.scaleOrdinal()
+	   //              .range(["#EDC951","#CC333F","#00A0B0"]);
+					
+				// var radarChartOptions = {
+				//   w: width,
+				//   h: height,
+				//   margin: margin,
+				//   maxValue: 0.5,
+				//   levels: 5,
+				//   roundStrokes: true,
+				//   color: color
+				// };
+				// Call function to ddata the Radar chart
+				// RadarChart(".radarChart", dataset, radarChartOptions);
+
+
+				//searchEngine---------------------------------------------------------------------------------
+				
+				// for (i = 0; i < data.length; i++) {
+				// 	tabledata.push({Id: data[i]["Id"], 
+				// 					Role: data[i]["Role"], 
+				// 					Name: data[i]["Name"], 
+				// 					Overall: data[i]["Overall"], 
+				// 					Age: data[i]["Age"], 
+				// 					Club: data[i]["Club"],
+				// 					Nationality: data[i]["Nationality"],
+				// 					Id: data[i]["Id"],
+				// 					checker: false
+				// 					// Pace: data[i]["Pace"],
+				// 					// Shot: data[i]["Shot"],
+				// 					// Pass: data[i]["Pass"],
+				// 					// Dribble: data[i]["Dribble"],
+				// 					// Defend: data[i]["Defend"],
+				// 					// Physical: data[i]["Physical"]
+				// 				})
+				// }
+				
+				temp = [];
+				for (i = 0; i < data.length; i++) {
+					temp.push(data[i]["Club"])
+				}
+
+				temp = Array.from(new Set(temp))
+				for (i = 0; i < temp.length; i++) {
+					clubs.push({Name: temp[i]});
+				}
+
+				ageList=[];
+				for (var i=16; i<=47; i++){
+					ageList.push({Age: i});
+				}
+
+				nationList = [];
+				temp = [];
+				for (i = 0; i < data.length; i++) {
+					temp.push(data[i]["Nationality"])
+				}
+
+				temp = Array.from(new Set(temp))
+				for (i = 0; i < temp.length; i++) {
+					nationList.push({Nationality: temp[i]});
+				}
+
+				roleList = [];
+				temp = ["GoalKeeper","Defender","Midfielder","Attacker"];
+				for (i = 0; i < temp.length; i++) {
+					roleList.push({Role: temp[i]});
+				}
+
+				overallList=[];
+				for (var i=1; i<=99; i++){
+					overallList.push({Overall: i});
+				}
+
+				// var table = d3.select('.table').append('table')
+			 //    var thead = table.append('thead')
+			 //    var tbody = table.append('tbody')
+			 //    thead.append('tr').selectAll('th').data(columns).enter().append('th').text(function (d) { return d })
+			 //    var rows = tbody.selectAll('tr').data(tabledata).enter().append('tr')
+			 //    var cells = rows.selectAll('td').data(function(row) {
+			 //    return columns.map(function (column) {
+			 //      return { column: column, value: row[column] } })
+			 //    }).enter().append('td').text(function (d) { return d.value })
+				 
+
+			 //    tbody.selectAll('tr')
+			 //    	.append("input")
+			 //    	.data(tabledata)
+			 //    	.attr("type", "checkbox")
+			 //    	.attr("class", "checkbox")
+			 //    	.attr("id", function (d) { return "check" + d.Id })
+
+				d3.select(".chart").append("div").attr("class","radarChart")
+				var olddata=[{axis: "Pace/Diving", value:0},{axis: "Shot/Handling", value:0},{axis: "Pass/Kicking", value:0},{axis: "Dribble/Reflexes", value:0},{axis: "Defend/Speed", value:0},{axis: "Physical/Positioning", value:0}]
+				var oldcard=[];
+				for (var i = 0; i < 3; i++){
+					oldcard.push({Name: "Card", Age:" ", Club:" ", Nationality:" ", Wage:" ", Value:" ", Role:" ", Overall:" ", Potential:" "})
+				}
+
+				cardlabel=["Age: ","Club: ","Nationality: ","Wage: ", "Value: ", "Role: ", "Overall ", "Potential: "]
+
+				var dropdownRole = d3.select(".filter").select("form").append("div").attr("class","filterRow")
+				dropdownRole.append("b").style("color","#fdc500").text("Role")
+				dropdownRole.append("input")
+				.style("border-radius","20px")
+					.attr("list","browsers0")
+					.attr("id","filterRole")
+				dropdownRole.append("datalist")
+					.attr("id","browsers0")
+					.selectAll("op0")
+					.data(roleList)
+					.enter()
+					.append("option").attr("id","op0")
+					.attr("value", function(d) {
+					return d.Role;
+					});
+				
+
+
+				var inputName = d3.select(".filter").select("form").append("div").attr("class","filterRow")
+			    inputName.append("b").style("color","#fdc500").text("Name")
+					inputName.append("input")
+					.style("border-radius","20px")
+			    	.attr("id","filterName")
+			    	.attr("type", "text")
+			    	.attr("size","20")
+			    	.on("input", inputFilter)
+			    
+
+			    var inputOverall = d3.select(".filter").select("form").append("div").attr("class","filterRow")
+				inputOverall.append("b").style("color","#fdc500").text("Overall")
+				inputOverall.append("input").style("border-radius","20px").style("text-align","right").attr("list","browsers4").attr("id","overall1").attr("value","99")
+				inputOverall.append("input").style("border-radius","20px").style("text-align","right").attr("list","browsers4").attr("id","overall2").attr("value","1")
+				inputOverall.append("datalist")
+					.attr("id","browsers4")
+					.selectAll("#op4")
+					.data(overallList)
+					.enter()
+					.append("option").attr("id","op4")
+					.attr("value", function(d) {
+					return d.Overall;
+					});
+				
+
+				var inputAge = d3.select(".filter").select("form").append("div").attr("class","filterRow")
+				inputAge.append("b").style("color","#fdc500").text("Age")
+				inputAge.append("input").style("border-radius","20px").style("text-align","right").attr("list","browsers1").attr("id","age1").attr("value","47")
+				inputAge.append("input").style("border-radius","20px").style("text-align","right").attr("list","browsers1").attr("id","age2").attr("value","16")
+				inputAge.append("datalist")
+					.attr("id","browsers1")
+					.selectAll("#op1")
+					.data(ageList)
+					.enter()
+					.append("option").attr("id","op1")
+					.attr("value", function(d) {
+					return d.Age;
+					});
+				
+
+			    
+				var dropdownClub = d3.select(".filter").select("form").append("div").attr("class","filterRow")
+				dropdownClub.append("b").style("color","#fdc500").text("Club")
+				dropdownClub.append("input")
+				.style("border-radius","20px")
+					.attr("list","browsers2")
+					.attr("id","filterClub")
+				dropdownClub.append("datalist")
+					.attr("id","browsers2")
+					.selectAll("op2")
+					.data(clubs)
+					.enter()
+					.append("option").attr("id","op2")
+					.attr("value", function(d) {
+					return d.Name;
+					});
+				
+
+				var dropdownNation = d3.select(".filter").select("form").append("div").attr("class","filterRow")
+				dropdownNation.append("b").style("color","#fdc500").text("Nationality")
+				dropdownNation.append("input")
+				.style("border-radius","20px")
+					.attr("list","browsers3")
+					.attr("id","filterNation")
+				dropdownNation.append("datalist")
+					.attr("id","browsers3")
+					.selectAll("#op3")
+					.data(nationList)
+					.enter()
+					.append("option").attr("id","op3")
+					.attr("value", function(d) {
+					return d.Nationality;
+					});
+				
+
+				var clearbtn = d3.select(".filter").select("form").append("div").attr("class","filterRow")
+				clearbtn.append("button")
+					.attr("type","reset")
+					.attr("value", "Clear")
+					.attr("id","clearBtn")
+					.text("Clear")
+
+
+			    inputFilter()
+			    applytick()
+
+
+				function updateRadar(dataset,carddata){
+					d3.select(".radarChart").remove()
+					d3.selectAll(".card").remove()
+					var c1 = d3.select(".cardrow").append("div").attr("class", "card").attr("id","card1")
+						.data(carddata)
+
+					c1.append("h3").attr("id","cardtitle").text(carddata[0]["Name"])
+					c1.append("p").text(cardlabel[0]+carddata[0]["Age"])
+					c1.append("p").text(cardlabel[1]+carddata[0]["Club"])
+					c1.append("p").text(cardlabel[2]+carddata[0]["Nationality"])
+					c1.append("p").text(cardlabel[3]+carddata[0]["Wage"])
+					c1.append("p").text(cardlabel[4]+carddata[0]["Value"])
+					c1.append("p").text(cardlabel[5]+carddata[0]["Role"])
+					c1.append("p").text(cardlabel[6]+carddata[0]["Overall"])
+					c1.append("p").text(cardlabel[7]+carddata[0]["Potential"])
+					
+					c1.select('h3')
+					.attr('style','opacity:0')
+					.transition()
+					.duration(1000)
+					.attr('style','opacity:1')
+
+					c1.selectAll('p')
+					.attr('style','opacity:0')
+					.transition()
+					.duration(1000)
+					.attr('style','opacity:1')
+
+
+					var c2 = d3.select(".cardrow").append("div").attr("class", "card").attr("id","card2")
+						
+						.data(carddata)
+					c2.append("h3").attr("id","cardtitle2").text(carddata[1]["Name"])
+					c2.append("p").text(cardlabel[0]+carddata[1]["Age"])
+					c2.append("p").text(cardlabel[1]+carddata[1]["Club"])
+					c2.append("p").text(cardlabel[2]+carddata[1]["Nationality"])
+					c2.append("p").text(cardlabel[3]+carddata[1]["Wage"])
+					c2.append("p").text(cardlabel[4]+carddata[1]["Value"])
+					c2.append("p").text(cardlabel[5]+carddata[1]["Role"])
+					c2.append("p").text(cardlabel[6]+carddata[1]["Overall"])
+					c2.append("p").text(cardlabel[7]+carddata[1]["Potential"])
+					c2.select('h3')
+					.attr('style','opacity:0')
+					.transition()
+					.duration(1000)
+					.attr('style','opacity:1')
+
+					c2.selectAll('p')
+					.attr('style','opacity:0')
+					.transition()
+					.duration(1000)
+					.attr('style','opacity:1')
+
+					var c3 = d3.select(".cardrow").append("div").attr("class", "card").attr("id","card3")
+						
+						.data(carddata)
+
+					c3.append("h3").attr("id","cardtitle3").text(carddata[2]["Name"])
+					c3.append("p").text(cardlabel[0]+carddata[2]["Age"])
+					c3.append("p").text(cardlabel[1]+carddata[2]["Club"])
+					c3.append("p").text(cardlabel[2]+carddata[2]["Nationality"])
+					c3.append("p").text(cardlabel[3]+carddata[2]["Wage"])
+					c3.append("p").text(cardlabel[4]+carddata[2]["Value"])
+					c3.append("p").text(cardlabel[5]+carddata[2]["Role"])
+					c3.append("p").text(cardlabel[6]+carddata[2]["Overall"])
+					c3.append("p").text(cardlabel[7]+carddata[2]["Potential"])
+
+					c3.select('h3')
+					.attr('style','opacity:0')
+					.transition()
+					.duration(1000)
+					.attr('style','opacity:1')
+
+					c3.selectAll('p')
+					.attr('style','opacity:0')
+					.transition()
+					.duration(1000)
+					.attr('style','opacity:1')
+
+					var color = d3.scaleOrdinal()
+		                .range(["#0fe3ab","#ffd427","#f15a24"]);
+						
+					var radarChartOptions = {
+					  w: width,
+					  h: height,
+					  margin: margin,
+					  maxValue: 0.5,
+					  levels: 5,
+					  roundStrokes: true,
+					  color: color
+					};
+
+					d3.select(".chart").append("div").attr("class","radarChart")
+					RadarChart(".radarChart", dataset, radarChartOptions);
+				}
+				
+				function updateTable(tabledata,columns) {
+					d3.select('.table').select('h2').remove()
+						d3.select('.table').append('h2').style("color","#fdc500").text('Player List')
+				    var table = d3.select('.table').append('table')
+				    var thead = table.append('thead')
+				    var tbody = table.append('tbody')
+				    thead.append('tr').selectAll('th').data(columns).enter().append('th').text(function (d) { return d })
+				    var rows = tbody.selectAll('tr').data(tabledata).enter().append('tr')
+				    var cells = rows.selectAll('td').data(function(row) {
+				    return columns.map(function (column) {
+				      return { column: column, value: row[column] } })
+				    }).enter().append('td').text(function (d) { return d.value })
+
+				    tbody.selectAll('tr')
+				    	.append("input")
+				    	.data(tabledata)
+				    	.attr("type", "checkbox")
+				    	.attr("class", "checkbox")
+				    	.attr("id", function (d) { return d.Id })
+				    	.on("change",function(){subset = getTicked()})
+				    	.property("checked", function (d) { return d.checker });
+
+				    return table 
+				}
+
+				function clearFilter() {
+					console.log("CLEAR")
+
+					dropdownRole.select("input").attr("value","")
+					inputName.select("input").attr("value","")
+					// inputAge.select("#age1").attr("value","47")
+					// inputAge.select("#age2").attr("value","16")
+					dropdownClub.select("input").attr("value","")
+					dropdownNation.select("input").attr("value","")
+					// inputName.attr("value","")
+					console.log(document.getElementById('filterName').value)
+					inputFilter()
+					
+				}
+
+				function KeepCount() {                    
+					var tick = document.getElementsByClassName('checkbox');
+					var count = 0;
+					for (i in tick){
+						if (tick[i].checked){
+							count+=1
+						}
+					}  
+					console.log(count)                  
+					if ( count > 3) {
+						alert('Maximum 3 players only!')
+						return false;
+					}
+					else{
+						applytick();
+					}
+				}
+
+				function getTicked(){
+					getfields = document.getElementsByClassName("checkbox");
+					
+					var fieldsId = [];
+					for ( var i = 0; i < getfields.length; i++ ) {
+						fieldsId.push(getfields[i].id)
+					}
+					
+					subsetId = [];
+					for ( var i = 0; i < subset.length; i++ ) {
+						subsetId.push(subset[i]["Id"])
+					}
+
+					for ( var i = 0; i < subset.length; i++ ) {
+						if (fieldsId.includes(subset[i]["Id"])){
+							for (var j = 0; j < getfields.length; j++){
+								if(subset[i]["Id"] == getfields[j].id){
+									subset[i]["checker"] = getfields[j].checked
+									// break;
+								}
+							}
+						}
+					}
+
+					return subset;
+				}
+				
+
+				function applytick(){
+					var radardata=[];
+					
+					var carddata = oldcard;
+
+					datacheck = 0;
+
+					for (i = 0; i < subset.length; i++) {
+						if (subset[i]["checker"]){
+							datacheck = 1;
+							break;
+						}
+					}
+
+					if (datacheck == 1){
+						for (i = 0; i < subset.length; i++) {
+							if(subset[i]["checker"]){
+								var stat = [];
+								stat.push({axis: "Pace/Diving", value: subset[i]["Pace"]})
+								stat.push({axis: "Shot/Handling", value: subset[i]["Shot"]}) 
+								stat.push({axis: "Pass/Kicking", value: subset[i]["Pass"]}) 
+								stat.push({axis: "Dribble/Reflexes", value: subset[i]["Dribble"]})  
+								stat.push({axis: "Defend/Speed", value: subset[i]["Defend"]})
+								stat.push({axis: "Physical/Positioning", value: subset[i]["Physical"]})
+
+								radardata.push(stat);							
+							} 
+						}
+					}
+					else
+						radardata.push(olddata)
+					
+						carddata = [];
+						for (i = 0; i < subset.length; i++) {
+							if(subset[i]["checker"]){
+								carddata.push(subset[i])							
+							} 
+						}
+						for (i = 0; i < 3; i++) {
+							carddata.push(oldcard[i])							
+						}
+
+					updateRadar(radardata, carddata);
+				}
+
+				function callUpdate(selectedRole, selectedName, selectedClub, selectedAge1, selectedAge2,selectedOverall1,selectedOverall2){
+
+					var table = d3.select("table").remove();
+
+				    var tablesubset = data.filter( function(d) { 
+				    	return d.Name.toLowerCase().indexOf( selectedName.toLowerCase() ) !== -1 
+				    	&& d.Club.toLowerCase().indexOf( selectedClub.toLowerCase() ) !== -1 
+				    	&& ( d.Age >= selectedAge1 && d.Age <= selectedAge2  )
+				    	&& d.Role.toLowerCase().indexOf( selectedRole.toLowerCase() ) !== -1 
+				    	&& ( d.Overall >= selectedOverall1 && d.Overall <= selectedOverall2  )
+				    } ); 
+
+				    updateTable(tablesubset,columns)
+				    // updateRadar()
+				}
+
+				function inputFilter(){
+					var selectedRole = document.getElementById('filterRole').value				
+					var selectedName = document.getElementById('filterName').value
+					var selectedClub = document.getElementById('filterClub').value
+					var selectedAge1 = document.getElementById('age2').value
+					var selectedAge2 = document.getElementById('age1').value
+					var selectedOverall1 = document.getElementById('overall2').value
+					var selectedOverall2 = document.getElementById('overall1').value
+					callUpdate(selectedRole, selectedName, selectedClub, selectedAge1, selectedAge2,selectedOverall1,selectedOverall2);
+
+				}
+				
+
+				d3.select("#filterRole").on("input", inputFilter)
+				d3.select("#filterName").on("input", inputFilter)
+				d3.select("#filterClub").on("input", inputFilter)
+				d3.select("#age1").on("input", inputFilter)
+				d3.select("#age2").on("input", inputFilter)
+				d3.select("#overall1").on("input", inputFilter)
+				d3.select("#overall2").on("input", inputFilter)
+				d3.select("#clearBtn").on("click", clearFilter)
+				d3.select("#applybtn").on("click", KeepCount)
+
+
+			});
+
+
+		</script>
+		<script src="./particles.js" type="application/javascript"></script>
+	</body>
+</html>

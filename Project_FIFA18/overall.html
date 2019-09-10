@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Overall Statistics</title>
+<script src="https://d3js.org/d3.v4.min.js"  charset="utf-8"></script>
+<script>
+    d3v4 = d3
+    window.d3 = null
+  </script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script>
+    d3v3 = d3
+    window.d3v3 = d3
+  </script>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="particles.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3-queue.v2.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+<script src="datamaps.world.min.js"></script>
+<script src="d3-tip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+</head>
+
+<body>
+	<div id="particles-js"></div>
+	
+	<div id="navigation" style="width:150px;padding-top:20px;padding-left:20px;display:flex;flex-direction:row;position:absolute;top:0">
+		<a href="index.html" class="home tooltip" id="home">
+				<span class="tooltiptext" id="tooltiphome">Home</span>
+			<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 486.988 486.988" style="enable-background:new 0 0 486.988 486.988;" xml:space="preserve">
+				<g>
+					<g>
+						<path d="M16.822,284.968h39.667v158.667c0,9.35,7.65,17,17,17h116.167c9.35,0,17-7.65,17-17V327.468h70.833v116.167
+							c0,9.35,7.65,17,17,17h110.5c9.35,0,17-7.65,17-17V284.968h48.167c6.8,0,13.033-4.25,15.583-10.483
+							c2.55-6.233,1.133-13.6-3.683-18.417L260.489,31.385c-6.517-6.517-17.283-6.8-23.8-0.283L5.206,255.785
+							c-5.1,4.817-6.517,12.183-3.967,18.7C3.789,281.001,10.022,284.968,16.822,284.968z M248.022,67.368l181.333,183.6h-24.367
+							c-9.35,0-17,7.65-17,17v158.667h-76.5V310.468c0-9.35-7.65-17-17-17H189.656c-9.35,0-17,7.65-17,17v116.167H90.489V267.968
+							c0-9.35-7.65-17-17-17H58.756L248.022,67.368z"/>
+					</g>
+				</g>
+			</svg>
+		</a>
+		<a href="players.html" class="player tooltip" id="player">
+				<span class="tooltiptext" id="tooltipstatistics">Player Comparison</span>
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="40%">
+				<path d="M211.71,208.09c-1.87-1.86-4.45-2.93-7.08-2.93s-5.2,1.069-7.07,2.93c-1.86,1.86-2.92,4.43-2.92,7.07    c0,2.63,1.06,5.21,2.92,7.069c1.87,1.86,4.44,2.931,7.07,2.931s5.21-1.07,7.08-2.931c1.86-1.859,2.92-4.439,2.92-7.069    S213.57,209.95,211.71,208.09z" fill="#9e69ee"/>
+				<path d="M204.634,184.996c5.523,0,10-4.478,10-10V144c0-27.57-22.429-50-50-50H136.83c15.253-8.636,25.577-25.005,25.577-43.75    c0-27.708-22.542-50.25-50.25-50.25c-27.708,0-50.25,22.542-50.25,50.25c0,18.745,10.324,35.114,25.577,43.75H57.968    c-27.57,0-50,22.43-50,50v141.997c0,5.522,4.477,10,10,10h30v160.094c-11.869,6.168-20,18.572-20,32.847v12.999    c0,5.522,4.477,10,10,10h73.333h73.333c5.523,0,10-4.478,10-10v-12.999c0-14.275-8.131-26.679-20-32.847V295.997h30    c5.523,0,10-4.478,10-10V249c0-5.522-4.477-10-10-10c-5.523,0-10,4.478-10,10v26.997h-20V115.714    c11.641,4.127,20,15.249,20,28.286v30.996C194.634,180.518,199.111,184.996,204.634,184.996z M81.907,50.25    c0-16.68,13.571-30.25,30.25-30.25c16.68,0,30.25,13.57,30.25,30.25s-13.57,30.25-30.25,30.25    C95.477,80.5,81.907,66.93,81.907,50.25z M67.968,114h86.667v130.83h-0.001H67.968V114z M27.968,275.997V144    c0-13.037,8.359-24.159,20-28.286v160.283H27.968z M101.301,491.937H47.968v-2.999c0-9.374,7.626-17.001,17.001-17.001h36.332    V491.937z M101.301,451.938H67.968v-96.271h33.333V451.938z M111.301,290.248c-5.523,0-10,4.478-10,10v35.419H67.968v-49.67    V264.83h86.667v21.167h-0.001v49.67h-33.333v-35.419C121.301,294.726,116.824,290.248,111.301,290.248z M154.634,355.667v96.271    h-33.333v-96.271H154.634z M174.635,488.939v2.999h-0.001h-53.333v-20h36.333C167.009,471.938,174.635,479.565,174.635,488.939z" fill="#9e69ee"/>
+				<path d="M494.032,0h-230c-5.523,0-10,4.478-10,10v40c0,5.522,4.477,10,10,10h57.635c5.523,0,10-4.478,10-10s-4.477-10-10-10    h-47.635V20h210v20H397c-5.523,0-10,4.478-10,10s4.477,10,10,10h97.032c5.523,0,10-4.478,10-10V10    C504.032,4.478,499.555,0,494.032,0z" fill="#9e69ee"/>
+				<path d="M366.1,42.93c-1.86-1.86-4.43-2.93-7.07-2.93c-2.63,0-5.21,1.069-7.07,2.93c-1.86,1.86-2.93,4.44-2.93,7.07    s1.07,5.21,2.93,7.069c1.86,1.86,4.44,2.931,7.07,2.931s5.21-1.07,7.07-2.931c1.86-1.859,2.93-4.439,2.93-7.069    S367.96,44.79,366.1,42.93z" fill="#9e69ee"/>
+				<path d="M354.032,90.4h-90c-5.523,0-10,4.478-10,10v40c0,5.523,4.477,10,10,10h90c5.523,0,10-4.478,10-10v-40    C364.032,94.878,359.555,90.4,354.032,90.4z M344.032,130.4h-70v-20h70V130.4z" fill="#9e69ee"/>
+				<path d="M454.032,180.8h-190c-5.523,0-10,4.478-10,10v40c0,5.522,4.477,10,10,10h190c5.523,0,10-4.478,10-10v-40    C464.032,185.277,459.555,180.8,454.032,180.8z M444.032,220.8h-170v-20h170V220.8z" fill="#9e69ee"/>
+				<path d="M364.032,361.6h-100c-5.523,0-10,4.478-10,10v40c0,5.522,4.477,10,10,10h100c5.523,0,10-4.478,10-10v-40    C374.032,366.078,369.555,361.6,364.032,361.6z M354.032,401.6h-80v-20h80V401.6z" fill="#9e69ee"/>
+				<path d="M403.907,271.2H264.032c-5.523,0-10,4.478-10,10v40c0,5.523,4.477,10,10,10h139.875c5.523,0,10-4.478,10-10v-40    C413.907,275.678,409.43,271.2,403.907,271.2z M393.907,311.2H274.032v-20h119.875V311.2z" fill="#9e69ee"/>
+				<path d="M434.032,452h-170c-5.523,0-10,4.478-10,10v40c0,5.522,4.477,10,10,10h170c5.523,0,10-4.478,10-10v-40    C444.032,456.478,439.555,452,434.032,452z M424.032,492h-150v-20h150V492z" fill="#9e69ee"/>
+			</svg>
+		</a>
+	</div>
+	<h1 class="overalltitle">OVERALL STATISTICS</h1>
+	<div id="mainCT">
+		<div id="container" class="mapCT"></div>
+	</div>
+	<script type="text/javascript">
+		
+		d3v4.queue()
+			.defer(d3v4.csv, "data/Fifa18.csv")
+			.await(ready); // Run 'ready' when JSONs are loaded
+		
+		function ready(error, dataset) { 
+			if (error) throw error;
+			
+			//Count frequency of each country
+			var countObj = {}; 
+			dataset.forEach( function(d) {
+			 if(countObj[d.Country] === undefined) {
+				countObj[d.Country] = 1;
+			} else {
+				countObj[d.Country] = countObj[d.Country] + 1;
+			}
+			})
+			var formatDecimal = d3.format(".2f")
+			var formatThousand = d3.format(",")
+			//Map
+			var series=[]
+			var clickedName=[]
+			for (items in countObj){
+				series.push([items, countObj[items]])
+			}
+			var mapData = {};
+			var onlyValues = series.map(function(obj){ return obj[1]; });
+			var minValue = Math.min.apply(null, onlyValues),
+				maxValue = Math.max.apply(null, onlyValues);
+
+			var paletteScale = d3v4.scaleLinear()
+					.domain([minValue,maxValue])
+					.range(["#FEE899","#F98200"]); 
+		
+			
+			series.forEach(function(item){
+				var iso = item[0], value = item[1];
+				mapData[iso] = { numberOfThings: value, fillColor: paletteScale(value) };
+			});
+			
+			new Datamap({
+				element: document.getElementById('container'),
+				projection: 'mercator', // big world map
+				fills: { defaultFill: '#F5F5F5' },
+				data: mapData,
+				geographyConfig: {
+					borderColor: '#3D3D3D',
+					borderWidth: 1.2,
+					highlightBorderWidth: 2,
+					// don't change color on mouse hover
+					highlightFillColor: function(geo) {
+						return geo['fillColor'] || '#F5F5F5';
+					},
+					// only change border
+					highlightBorderColor: '#000',
+					// show desired information in tooltip
+					popupTemplate: function(geo, data) {
+						// don't show tooltip if country don't present in dataset
+						if (!data) { return ; }
+						// tooltip content
+						return ['<div class="hoverinfo">',
+							'<strong style="text-transform:uppercase">', geo.properties.name, '</strong>',
+							'<br>Players Count: <strong>', data.numberOfThings, '</strong>',
+							'</div>'].join('');
+					}
+				},
+				done: function(datamap) {
+					var clickedCountry=0
+					var filteredData=[],filteredData2=[]
+
+					datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+						if (clickedCountry<1){
+							
+							dataset.forEach(function(d) {
+								if(d.Nationality=== geography.properties.name) {
+									filteredData.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+								}
+								if (geography.properties.name==="United Kingdom"){
+									if(d.Nationality === "Northern Ireland" || d.Nationality ===  "Scotland" || d.Nationality === "Wales" || d.Nationality === "England"){
+										filteredData.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+								if (geography.properties.name==="United States of America"){
+									if(d.Nationality === "United States"){
+										filteredData.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+
+								if (geography.properties.name==="Democratic Republic of the Congo"){
+									if(d.Nationality === "Congo" || d.Nationality === "DR Congo"){
+										filteredData.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+
+								if (geography.properties.name==="United Republic of Tanzania"){
+									if(d.Nationality === "Tanzania"){
+										filteredData.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+
+								if (geography.properties.name==="China"){
+									if(d.Nationality === "China PR"){
+										filteredData.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+
+								if (geography.properties.name==="Central African Republic"){
+									if(d.Nationality === "Central African Rep."){
+										filteredData.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+
+							})
+							if(filteredData.length>=1){
+								clickedCountry=clickedCountry+1
+								clickedName.push(geography.properties.name)
+								updateStats(filteredData)
+							} else {
+								alert("The country chosen don't have any players")
+							}
+						} else if (clickedCountry==1){
+							dataset.forEach(function(d) {
+								if(d.Nationality=== geography.properties.name) {
+									filteredData2.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+								}
+								if (geography.properties.name==="United Kingdom"){
+									if(d.Nationality === "Northern Ireland" || d.Nationality ===  "Scotland" || d.Nationality === "Wales" || d.Nationality === "England"){
+										filteredData2.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+								if (geography.properties.name==="United States of America"){
+									if(d.Nationality === "United States"){
+										filteredData2.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+
+								if (geography.properties.name==="Democratic Republic of the Congo"){
+									if(d.Nationality === "Congo" || d.Nationality === "DR Congo"){
+										filteredData2.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+
+								if (geography.properties.name==="United Republic of Tanzania"){
+									if(d.Nationality === "Tanzania"){
+										filteredData2.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+
+								if (geography.properties.name==="China"){
+									if(d.Nationality === "China PR"){
+										filteredData2.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}
+
+								if (geography.properties.name==="Central African Republic"){
+									if(d.Nationality === "Central African Rep."){
+										filteredData2.push({Name:d.Name,Age:parseInt(d.Age),Overall:parseInt(d.Overall),Wage:parseInt(d.Wage),Potential:parseInt(d.Potential),Club:d.Club,Value:parseInt(d.Value),Role:d.Role,Nationality:d.Nationality})
+									}
+								}								
+							})
+							if(geography.properties.name==clickedName[0]){
+								alert("You can't compare the same country")
+							} else 	if(filteredData2.length>=1){
+									clickedCountry=clickedCountry+1
+									clickedName.push(geography.properties.name)
+									updateDualStats(filteredData,filteredData2)
+								} else {
+									alert("The country chosen don't have any players")
+							}
+						} else{
+								alert("Please RESET before repicking.")
+						}
+
+					});
+					d3v4.select("body").append("button").attr("class","resetbtn").text("RESET MAP").on("click", reset)
+
+			function reset(){
+				clickedCountry=0
+				clickedName=[]
+				filteredData2=[]
+				filteredData=[]
+				updateStats(dataset)
+				d3v4.selectAll(".legend").remove()
+			}
+
+			var svg = d3v4.select(".datamap");
+			svg.append("g")
+				.attr("class", "legendLinear")
+				.attr("transform", "translate(10,700)");
+
+			var legendLinear = d3.legendColor()
+				.shapeWidth(50)
+				.orient('horizontal')
+				.scale(paletteScale);
+
+			svg.select(".legendLinear")
+				.call(legendLinear);
+		}
+				
+				
+	})
+
+			
+			
+			
+			function updateStats(data){
+
+				
+				var wagediv = d3v4.select("#wagediv")
+				var valuediv = d3v4.select("#valuediv")
+				var overalldiv = d3v4.select("#overalldiv")
+				var potentialdiv = d3v4.select("#potentialdiv")
+				var maxWage = d3v4.max(data, function(d) { return parseInt(d.Wage); });
+				var maxValue = d3v4.max(data, function(d) { return parseInt(d.Value); });
+				var maxOverall = d3v4.max(data, function(d) { return parseInt(d.Overall); });
+				var maxPot = d3v4.max(data, function(d) { return parseInt(d.Potential); });
+				
+				data.forEach(function(d) {
+					if(parseInt(d.Wage) === maxWage){
+						wagename=d.Name
+						wageage=d.Age
+						wageclub=d.Club
+						wagenat=d.Nationality
+						wagenum=d.Wage
+					} 
+					if (parseInt(d.Value) === maxValue){
+						valuename=d.Name
+						valueage=d.Age
+						valueclub=d.Club
+						valuenat=d.Nationality
+						valuenum=d.Value
+					}
+					if (parseInt(d.Overall) === maxOverall){
+						overallname=d.Name
+						overallage=d.Age
+						overallclub=d.Club
+						overallnat=d.Nationality
+						overallnum=d.Overall
+					}
+					if (parseInt(d.Potential) === maxPot){
+						potname=d.Name
+						potage=d.Age
+						potclub=d.Club
+						potnat=d.Nationality
+						potnum=d.Potential
+					}
+				});
+
+				//WAGE
+
+				var wagenamediv= wagediv
+						.select("#wagename")
+						.text("Name: " + wagename)
+							
+				var wageagediv= wagediv
+						.select("#wageage")
+						.text("Age: "+ wageage)
+							
+				var wageclubdiv= wagediv
+							.select("#wageclub")
+							.text("Club: "+ wageclub)
+							
+				var wagenatdiv= wagediv
+							.select("#wagenat")
+							.text("Nationality: "+ wagenat)
+
+				var wagenumdiv= wagediv
+							.select("#wagenum")
+							.text("Wage: "+ formatThousand(wagenum))
+							
+				//VALUE
+				var value= valuediv
+						.select("#valuetitle")
+						.text("Highest Value")
+						
+				var valuenamediv= valuediv
+							.select("#valuename")
+							.text("Name: " + valuename)
+
+				var valueagediv= valuediv
+							.select("#valueage")
+							.text("Age: " + valueage)
+
+				var valueclubdiv= valuediv
+							.select("#valueclub")
+							.text("Club: " + valueclub)
+							
+				var valuenatdiv= valuediv
+							.select("#valuenat")
+							.text("Nationality: " + valuenat)
+
+				var valuenumdiv= valuediv
+							.select("#valuenum")
+							.text("Value: "+ formatThousand(valuenum))
+
+				//OVERALL
+				var overall= overalldiv
+						.select("#overalltitle")
+						.text("Highest Overall")
+						
+				var overallnamediv= overalldiv
+							.select("#overallname")
+							.text("Name: " + overallname)
+
+				var overallagediv= overalldiv
+							.select("#overallage")
+							.text("Age: " + overallage)
+
+				var overallclubdiv= overalldiv
+							.select("#overallclub")
+							.text("Club: " + overallclub)
+
+				var overallnatdiv= overalldiv
+							.select("#overallnat")
+							.text("Nationality: " + overallnat)
+				
+				var overallnumdiv= overalldiv
+							.select("#overallnum")
+							.text("Overall: "+ overallnum)
+
+				//POTENTIAL
+				var potential= potentialdiv
+							.select("#potentialtitle")
+							.text("Highest Potential")
+						
+				var potentialnamediv= potentialdiv
+								.select("#potentialname")
+								.text("Name: " + potname)
+
+				var potentialagediv= potentialdiv
+								.select("#potentialage")
+								.text("Age: " + potage)
+
+				var potentialclubdiv= potentialdiv
+								.select("#potentialclub")
+								.text("Club: " + potclub)
+
+				var potentialnatdiv= potentialdiv
+								.select("#potentialnat")
+								.text("Nationality: " + potnat)
+				var potentialnumdiv= potentialdiv
+							.select("#potentialnum")
+							.text("Potential: "+ potnum)
+								
+				//Bar Charts
+				
+				var svgWidth = 500;
+				var svgHeight = 300;
+				
+				var xScale = d3v4.scaleBand().range ([0, svgWidth]).padding(0.4),
+				yScaleWage = d3v4.scaleLinear().range ([svgHeight, 0]),
+				yScaleOverall = d3v4.scaleLinear().range ([svgHeight, 0]),
+				yScaleValue = d3v4.scaleLinear().range ([svgHeight, 0]),
+				yScalePot = d3v4.scaleLinear().range ([svgHeight, 0])
+				
+				
+
+				var totalAtkWage=0,totalAtkOverall=0, totalAtkPot=0, totalAtkValue=0, 
+				totalDefWage=0,totalDefOverall=0, totalDefPot=0, totalDefValue=0, 
+				totalMidWage=0, totalMidOverall=0,totalMidPot=0,totalMidValue=0,
+				totalGoalWage=0, totalGoalOverall=0,totalGoalPot=0,totalGoalValue=0
+
+				var counterAtk=0,counterDef=0,counterGoal=0,counterMid=0
+
+				data.forEach(function(d) {
+					if(d.Role=== "Attacker"){
+					totalAtkWage=totalAtkWage+parseInt(d.Wage)
+					totalAtkOverall=totalAtkOverall+parseInt(d.Overall)
+					totalAtkPot=totalAtkPot+parseInt(d.Potential)
+					totalAtkValue=totalAtkValue+parseInt(d.Value)
+					counterAtk=counterAtk+1
+				}
+
+				if(d.Role=== "Defender"){
+					totalDefWage=totalDefWage+parseInt(d.Wage)
+					totalDefOverall=totalDefOverall+parseInt(d.Overall)
+					totalDefPot=totalDefPot+parseInt(d.Potential)
+					totalDefValue=totalDefValue+parseInt(d.Value)
+					counterDef=counterDef+1
+				}
+
+				if(d.Role=== "Goalkeeper"){
+					totalGoalWage=totalGoalWage+parseInt(d.Wage)
+					totalGoalOverall=totalGoalOverall+parseInt(d.Overall)
+					totalGoalPot=totalGoalPot+parseInt(d.Potential)
+					totalGoalValue=totalGoalValue+parseInt(d.Value)
+					counterGoal=counterGoal+1
+				}
+
+				if(d.Role=== "Midfielder"){
+					totalMidWage=totalMidWage+parseInt(d.Wage)
+					totalMidOverall=totalMidOverall+parseInt(d.Overall)
+					totalMidPot=totalMidPot+parseInt(d.Potential)
+					totalMidValue=totalMidValue+parseInt(d.Value)
+					counterMid=counterMid+1
+				}
+				})
+
+				var AtkWage = totalAtkWage / counterAtk
+				var AtkOverall = totalAtkOverall / counterAtk
+				var AtkPot = totalAtkPot / counterAtk
+				var AtkValue = totalAtkValue / counterAtk
+
+				var DefWage = totalDefWage / counterDef
+				var DefOverall = totalDefOverall / counterDef
+				var DefPot = totalDefPot / counterDef
+				var DefValue = totalDefValue / counterDef
+
+				var MidWage = totalMidWage / counterMid
+				var MidOverall = totalMidOverall / counterMid
+				var MidPot = totalMidPot / counterMid
+				var MidValue = totalMidValue / counterMid
+
+				var GoalWage = totalGoalWage / counterGoal
+				var GoalOverall = totalGoalOverall / counterGoal
+				var GoalPot = totalGoalPot / counterGoal
+				var GoalValue = totalGoalValue / counterGoal
+
+				
+				if(counterAtk==0){
+					AtkWage=0
+					AtkOverall=0
+					AtkPot=0
+					AtkValue=0
+				}
+				if(counterDef==0){
+					DefWage=0
+					DefOverall=0
+					DefPot=0
+					DefValue=0
+				}
+				if (counterMid==0){
+					MidWage=0
+					MidOverall=0
+					MidPot=0
+					MidValue=0
+				}
+				if(counterGoal==0){
+					GoalWage=0
+					GoalOverall=0
+					GoalPot=0
+					GoalValue=0
+				}
+
+				var wageData=[AtkWage, GoalWage, MidWage, DefWage]
+				var OverallData=[AtkOverall, GoalOverall, MidOverall, DefOverall]
+				var ValueData=[AtkValue, GoalValue, MidValue, DefValue]
+				var PotData=[AtkPot, GoalPot, MidPot, DefPot]
+
+				var maxAvgWage=Math.max(AtkWage, DefWage,MidWage,GoalWage)
+				var maxAvgOverall=Math.max(AtkOverall, DefOverall,MidOverall,GoalOverall)
+				var maxAvgValue=Math.max(AtkValue, DefValue,MidValue,GoalValue)
+				var maxAvgPot=Math.max(AtkPot, DefPot,MidPot,GoalPot)
+
+				xScale.domain(data.map(function(d) { return d.Role; }));
+				yScaleWage.domain([0, (maxAvgWage+2000)]); 
+				yScaleOverall.domain([0, (maxAvgOverall+20)]); 
+				yScaleValue.domain([0, (maxAvgValue+100000)]); 
+				yScalePot.domain([0, (maxAvgPot+20)]);
+
+				var current=-45				
+
+				d3v4.select("#wagey")
+				.remove()
+				
+				var gWage = d3v4.select("#wagebar")
+				d3v4.select("#wagebar").append("g")
+			 .attr("id","wagey")
+			 .call(d3v4.axisLeft(yScaleWage))
+
+				var bars=gWage.selectAll("rect")
+					.remove()
+					.exit()
+					.data(wageData)		
+
+				var tip = d3v4.tip()
+				.attr('class', 'd3-tip')
+				.offset([-10, 0])
+				.html(function(d) {
+					var formatDecimal = d3.format(".2f")
+					return "<strong>Wage:</strong> <span style='color:red'>" + formatDecimal(d)  + "</span>";
+				})
+				gWage.call(tip)
+
+				bars.enter()
+					.append("rect")
+					.attr("x",  function(d, i) {    
+						var a= current+111
+						current=a
+						return a;  //Bar width of 20 plus 1 for padding 
+						
+					})
+					.attr("id",function(d,i){return i})
+					.attr("y", function(d) { return yScaleWage(d); } )
+					.attr("width", 30)   
+					.attr("height", function(d,i){ 
+						return svgHeight - yScaleWage(d); 
+					
+					})
+					.style("fill", "#9e69ee")
+					.on('mouseover', tip.show)
+					.on('mouseout', tip.hide);
+					
+					//Value Bar
+					var current=-45
+					d3v4.select("#Valuey")
+					.remove()
+					var gValue = d3v4.select("#Valuebar")
+					d3v4.select("#Valuebar").append("g")
+				.attr("id","Valuey")
+				.call(d3v4.axisLeft(yScaleValue))
+
+					var bars=gValue.selectAll("rect")
+						.remove()
+						.exit()
+						.data(ValueData)		
+
+					var tip = d3v4.tip()
+					.attr('class', 'd3-tip')
+					.offset([-10, 0])
+					.html(function(d) {
+						var formatDecimal = d3.format(".2f")
+						return "<strong>Value:</strong> <span style='color:red'>" + formatDecimal(d)  + "</span>";
+					})
+					gValue.call(tip)
+
+					bars.enter()
+						.append("rect")
+						.attr("x",  function(d, i) {    
+							var a= current+111
+							current=a
+							return a;  //Bar width of 20 plus 1 for padding 
+							
+						})
+						.attr("id",function(d,i){return i})
+						.attr("y", function(d) { return yScaleValue(d); } )
+						.attr("width", 30)   
+						.attr("height", function(d,i){ 
+							return svgHeight - yScaleValue(d); 
+						
+						})
+						.style("fill", "#9e69ee")
+						.on('mouseover', tip.show)
+						.on('mouseout', tip.hide);
+
+						//Overall Bar
+						var current=-45
+						d3v4.select("#Overally")
+						.remove()
+						var gOverall = d3v4.select("#Overallbar")
+						d3v4.select("#Overallbar").append("g")
+					.attr("id","Overally")
+					.call(d3v4.axisLeft(yScaleOverall))
+
+						var bars=gOverall.selectAll("rect")
+							.remove()
+							.exit()
+							.data(OverallData)		
+
+						var tip = d3v4.tip()
+						.attr('class', 'd3-tip')
+						.offset([-10, 0])
+						.html(function(d) {
+							var formatDecimal = d3.format(".2f")
+							return "<strong>Overall:</strong> <span style='color:red'>" + formatDecimal(d)  + "</span>";
+						})
+						gOverall.call(tip)
+
+						bars.enter()
+							.append("rect")
+							.attr("x",  function(d, i) {    
+								var a= current+111
+								current=a
+								return a;  //Bar width of 20 plus 1 for padding 
+								
+							})
+							.attr("id",function(d,i){return i})
+							.attr("y", function(d) { return yScaleOverall(d); } )
+							.attr("width", 30)   
+							.attr("height", function(d,i){ 
+								return svgHeight - yScaleOverall(d); 
+							
+							})
+							.style("fill", "#9e69ee")
+							.on('mouseover', tip.show)
+							.on('mouseout', tip.hide);
+
+							//Pot Bar
+							var current=-45
+							d3v4.select("#Poty")
+							.remove()
+							var gPot = d3v4.select("#Potbar")
+							d3v4.select("#Potbar").append("g")
+							.attr("id","Poty")
+							.call(d3v4.axisLeft(yScalePot))
+
+							var bars=gPot.selectAll("rect")
+								.remove()
+								.exit()
+								.data(PotData)		
+
+							var tip = d3v4.tip()
+							.attr('class', 'd3-tip')
+							.offset([-10, 0])
+							.html(function(d) {
+								var formatDecimal = d3.format(".2f")
+								return "<strong>Potential:</strong> <span style='color:red'>" + formatDecimal(d)  + "</span>";
+							})
+							gPot.call(tip)
+
+							bars.enter()
+								.append("rect")
+								.attr("x",  function(d, i) {    
+									var a= current+111
+									current=a
+									return a;  //Bar width of 20 plus 1 for padding 
+									
+								})
+								.attr("id",function(d,i){return i})
+								.attr("y", function(d) { return yScalePot(d); } )
+								.attr("width", 30)   
+								.attr("height", function(d,i){ 
+									return svgHeight - yScalePot(d); 
+								
+								})
+								.style("fill", "#9e69ee")
+								.on('mouseover', tip.show)
+								.on('mouseout', tip.hide);
+
+				//Animation
+				gValue.selectAll("rect")
+				.attr("height", 0)
+				.attr("y", svgHeight )
+				.transition()
+				.duration(1000)
+				.delay(function (d, i) {
+				return i * 50;
+				}).attr("height", function(d,i){ 
+					return svgHeight - yScaleValue(d); 
+				})
+				.attr("y", function(d) { return yScaleValue(d); } )
+
+				gOverall.selectAll("rect")
+				.attr("height", 0)
+				.attr("y", svgHeight )
+				.transition()
+				.duration(1000)
+				.delay(function (d, i) {
+				return i * 50;
+				}).attr("height", function(d,i){ 
+					return svgHeight - yScaleOverall(d); 
+				})
+				.attr("y", function(d) { return yScaleOverall(d); } )
+
+				gWage.selectAll("rect")
+				.attr("height", 0)
+				.attr("y", svgHeight )
+				.transition()
+				.duration(1000)
+				.delay(function (d, i) {
+				return i * 50;
+				}).attr("height", function(d,i){ 
+					return svgHeight - yScaleWage(d); 
+				})
+				.attr("y", function(d) { return yScaleWage(d); } )
+
+				gPot.selectAll("rect")
+				.attr("height", 0)
+				.attr("y", svgHeight )
+				.transition()
+				.duration(1000)
+				.delay(function (d, i) {
+				return i * 50;
+				}).attr("height", function(d,i){ 
+					return svgHeight - yScalePot(d); 
+				})
+				.attr("y", function(d) { return yScalePot(d); } )
+
+				wagediv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				wagediv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				valuediv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				valuediv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				overalldiv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				overalldiv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				potentialdiv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				potentialdiv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+				
+
+			}
+
+				// var svg = d3v4.select("body").append("svg").attr("style","margin-left: 22%;").attr("height","500px");
+			// var path = d3v4.geoPath().projection(d3v4.geoMercator());
+			// d3v4.json("https://unpkg.com/world-atlas@1/world/110m.json", function(error, world) {
+			//   if (error) throw error;
+			//   svg.selectAll("path")
+			// 	 .data(topojson.feature(world,world.objects.countries).features)
+			// 	 .enter()
+			// 	 .append("path")
+			// 	 .attr("d", path)
+			// 	 .style("fill", function(d) {
+			// 		return color(countObj[d.Nationality]); // get rate value for property matching data ID
+			// 		// pass rate value to color function, return color based on domain and range
+			// 	})
+			// });
+
+			
+		
+		
+		// var color = d3v4.scaleThreshold()
+		// 	.domain([0.02, 0.04, 0.06, 0.08, 0.10])
+		// 	.range(["#f2f0f7", "#dadaeb", "#bcbddc", "#9e9ac8", "#756bb1", "#54278f"]);
+
+
+			function updateDualStats(data,data2){
+
+				
+				var wagediv = d3v4.select("#wagediv")
+				var valuediv = d3v4.select("#valuediv")
+				var overalldiv = d3v4.select("#overalldiv")
+				var potentialdiv = d3v4.select("#potentialdiv")
+
+				var maxWage = d3v4.max(data, function(d) { return parseInt(d.Wage); });
+				var maxValue = d3v4.max(data, function(d) { return parseInt(d.Value); });
+				var maxOverall = d3v4.max(data, function(d) { return parseInt(d.Overall); });
+				var maxPot = d3v4.max(data, function(d) { return parseInt(d.Potential); });
+
+				var maxWage2 = d3v4.max(data2, function(d) { return parseInt(d.Wage); });
+				var maxValue2 = d3v4.max(data2, function(d) { return parseInt(d.Value); });
+				var maxOverall2 = d3v4.max(data2, function(d) { return parseInt(d.Overall); });
+				var maxPot2 = d3v4.max(data2, function(d) { return parseInt(d.Potential); });
+
+				var finalWage=Math.max(maxWage,maxWage2)
+				var finalValue=Math.max(maxValue,maxValue2)
+				var finalOverall=Math.max(maxOverall,maxOverall2)
+				var finalPot=Math.max(maxPot,maxPot2)
+				var color = d3.scale.ordinal().range(["#98abc5", "#d0743c"]);
+				
+				if(finalWage == maxWage){
+					data.forEach(function(d) {
+						if(parseInt(d.Wage) === maxWage){
+							wagename=d.Name
+							wageage=d.Age
+							wageclub=d.Club
+							wagenat=d.Nationality
+							wagenum=d.Wage
+						} 						
+					})
+				} else {
+					data2.forEach(function(d) {
+						if(parseInt(d.Wage) === maxWage2){
+							wagename=d.Name
+							wageage=d.Age
+							wageclub=d.Club
+							wagenat=d.Nationality
+							wagenum=d.Wage
+						}
+					})
+				}
+
+				if(finalValue==maxValue){
+					data.forEach(function(d){
+						if (parseInt(d.Value) === maxValue){
+							valuename=d.Name
+							valueage=d.Age
+							valueclub=d.Club
+							valuenat=d.Nationality
+							valuenum=d.Value
+						}						
+					})
+				} else {
+						data2.forEach(function(d) {
+							if(parseInt(d.Value) === maxValue2){
+								valuename=d.Name
+								valueage=d.Age
+								valueclub=d.Club
+								valuenat=d.Nationality
+								valuenum=d.Value
+							}
+						})
+				}
+
+				if(finalOverall==maxOverall){
+					data.forEach(function(d){
+						if (parseInt(d.Overall) === maxOverall){
+							overallname=d.Name
+							overallage=d.Age
+							overallclub=d.Club
+							overallnat=d.Nationality
+							overallnum=d.Overall
+						}						
+					})
+				} else {
+						data2.forEach(function(d) {
+							if(parseInt(d.Overall) === maxOverall2){
+								overallname=d.Name
+								overallage=d.Age
+								overallclub=d.Club
+								overallnat=d.Nationality
+								overallnum=d.Overall
+							}
+						})
+				}
+
+				if(finalPot==maxPot){
+					data.forEach(function(d){
+						if (parseInt(d.Potential) === maxPot){
+							potname=d.Name
+							potage=d.Age
+							potclub=d.Club
+							potnat=d.Nationality
+							potnum=d.Potential
+						}						
+					})
+				} else {
+						data2.forEach(function(d) {
+							if(parseInt(d.Potential) === maxPot2){
+								potname=d.Name
+								potage=d.Age
+								potclub=d.Club
+								potnat=d.Nationality
+								potnum=d.Potential
+							}
+						})
+				}
+
+				
+				//WAGE
+
+				var wagenamediv= wagediv
+						.select("#wagename")
+						.text("Name: " + wagename)
+							
+				var wageagediv= wagediv
+						.select("#wageage")
+						.text("Age: "+ wageage)
+							
+				var wageclubdiv= wagediv
+							.select("#wageclub")
+							.text("Club: "+ wageclub)
+							
+				var wagenatdiv= wagediv
+							.select("#wagenat")
+							.text("Nationality: "+ wagenat)
+
+				var wagenumdiv= wagediv
+							.select("#wagenum")
+							.text("Wage: "+ formatThousand(wagenum))
+							
+				//VALUE
+				var value= valuediv
+						.select("#valuetitle")
+						.text("Highest Value")
+						
+				var valuenamediv= valuediv
+							.select("#valuename")
+							.text("Name: " + valuename)
+
+				var valueagediv= valuediv
+							.select("#valueage")
+							.text("Age: " + valueage)
+
+				var valueclubdiv= valuediv
+							.select("#valueclub")
+							.text("Club: " + valueclub)
+							
+				var valuenatdiv= valuediv
+							.select("#valuenat")
+							.text("Nationality: " + valuenat)
+
+				var valuenumdiv= valuediv
+							.select("#valuenum")
+							.text("Value: "+ formatThousand(valuenum))
+
+				//OVERALL
+				var overall= overalldiv
+						.select("#overalltitle")
+						.text("Highest Overall")
+						
+				var overallnamediv= overalldiv
+							.select("#overallname")
+							.text("Name: " + overallname)
+
+				var overallagediv= overalldiv
+							.select("#overallage")
+							.text("Age: " + overallage)
+
+				var overallclubdiv= overalldiv
+							.select("#overallclub")
+							.text("Club: " + overallclub)
+
+				var overallnatdiv= overalldiv
+							.select("#overallnat")
+							.text("Nationality: " + overallnat)
+
+				var overallnumdiv= overalldiv
+							.select("#overallnum")
+							.text("Overall: "+ overallnum)
+							
+				//POTENTIAL
+				var potential= potentialdiv
+							.select("#potentialtitle")
+							.text("Highest Potential")
+						
+				var potentialnamediv= potentialdiv
+								.select("#potentialname")
+								.text("Name: " + potname)
+
+				var potentialagediv= potentialdiv
+								.select("#potentialage")
+								.text("Age: " + potage)
+
+				var potentialclubdiv= potentialdiv
+								.select("#potentialclub")
+								.text("Club: " + potclub)
+
+				var potentialnatdiv= potentialdiv
+								.select("#potentialnat")
+								.text("Nationality: " + potnat)
+
+					var potentialnumdiv= potentialdiv
+							.select("#potentialnum")
+							.text("Potential: "+ potnum)
+								
+				//Bar Charts
+				
+				var svgWidth = 500;
+				var svgHeight = 300;
+			
+				var totalAtkWage=0,totalAtkOverall=0, totalAtkPot=0, totalAtkValue=0, 
+				totalDefWage=0,totalDefOverall=0, totalDefPot=0, totalDefValue=0, 
+				totalMidWage=0, totalMidOverall=0,totalMidPot=0,totalMidValue=0,
+				totalGoalWage=0, totalGoalOverall=0,totalGoalPot=0,totalGoalValue=0
+
+				var totalAtkWage2=0,totalAtkOverall2=0, totalAtkPot2=0, totalAtkValue2=0, 
+				totalDefWage2=0,totalDefOverall2=0, totalDefPot2=0, totalDefValue2=0, 
+				totalMidWage2=0, totalMidOverall2=0,totalMidPot2=0,totalMidValue2=0,
+				totalGoalWage2=0, totalGoalOverall2=0,totalGoalPot2=0,totalGoalValue2=0
+
+				var counterAtk=0,counterDef=0,counterGoal=0,counterMid=0
+				var counterAtk2=0,counterDef2=0,counterGoal2=0,counterMid2=0
+
+				data.forEach(function(d) {
+					if(d.Role=== "Attacker"){
+						totalAtkWage=totalAtkWage+parseInt(d.Wage)
+						totalAtkOverall=totalAtkOverall+parseInt(d.Overall)
+						totalAtkPot=totalAtkPot+parseInt(d.Potential)
+						totalAtkValue=totalAtkValue+parseInt(d.Value)
+						counterAtk=counterAtk+1
+					}
+
+					if(d.Role=== "Defender"){
+						totalDefWage=totalDefWage+parseInt(d.Wage)
+						totalDefOverall=totalDefOverall+parseInt(d.Overall)
+						totalDefPot=totalDefPot+parseInt(d.Potential)
+						totalDefValue=totalDefValue+parseInt(d.Value)
+						counterDef=counterDef+1
+					}
+
+					if(d.Role=== "Goalkeeper"){
+						totalGoalWage=totalGoalWage+parseInt(d.Wage)
+						totalGoalOverall=totalGoalOverall+parseInt(d.Overall)
+						totalGoalPot=totalGoalPot+parseInt(d.Potential)
+						totalGoalValue=totalGoalValue+parseInt(d.Value)
+						counterGoal=counterGoal+1
+					}
+
+					if(d.Role=== "Midfielder"){
+						totalMidWage=totalMidWage+parseInt(d.Wage)
+						totalMidOverall=totalMidOverall+parseInt(d.Overall)
+						totalMidPot=totalMidPot+parseInt(d.Potential)
+						totalMidValue=totalMidValue+parseInt(d.Value)
+						counterMid=counterMid+1
+					}
+				})
+
+				data2.forEach(function(d) {
+					if(d.Role=== "Attacker"){
+						totalAtkWage2=totalAtkWage2+parseInt(d.Wage)
+						totalAtkOverall2=totalAtkOverall2+parseInt(d.Overall)
+						totalAtkPot2=totalAtkPot2+parseInt(d.Potential)
+						totalAtkValue2=totalAtkValue2+parseInt(d.Value)
+						counterAtk2=counterAtk2+1
+					}
+
+					if(d.Role=== "Defender"){
+						totalDefWage2=totalDefWage2+parseInt(d.Wage)
+						totalDefOverall2=totalDefOverall2+parseInt(d.Overall)
+						totalDefPot2=totalDefPot2+parseInt(d.Potential)
+						totalDefValue2=totalDefValue2+parseInt(d.Value)
+						counterDef2=counterDef2+1
+					}
+
+					if(d.Role=== "Goalkeeper"){
+						totalGoalWage2=totalGoalWage2+parseInt(d.Wage)
+						totalGoalOverall2=totalGoalOverall2+parseInt(d.Overall)
+						totalGoalPot2=totalGoalPot2+parseInt(d.Potential)
+						totalGoalValue2=totalGoalValue2+parseInt(d.Value)
+						counterGoal2=counterGoal2+1
+					}
+
+					if(d.Role=== "Midfielder"){
+						totalMidWage2=totalMidWage2+parseInt(d.Wage)
+						totalMidOverall2=totalMidOverall2+parseInt(d.Overall)
+						totalMidPot2=totalMidPot2+parseInt(d.Potential)
+						totalMidValue2=totalMidValue2+parseInt(d.Value)
+						counterMid2=counterMid2+1
+					}
+				})
+
+				var AtkWage = totalAtkWage / counterAtk
+				var AtkOverall = totalAtkOverall / counterAtk
+				var AtkPot = totalAtkPot / counterAtk
+				var AtkValue = totalAtkValue / counterAtk
+
+				var DefWage = totalDefWage / counterDef
+				var DefOverall = totalDefOverall / counterDef
+				var DefPot = totalDefPot / counterDef
+				var DefValue = totalDefValue / counterDef
+
+				var MidWage = totalMidWage / counterMid
+				var MidOverall = totalMidOverall / counterMid
+				var MidPot = totalMidPot / counterMid
+				var MidValue = totalMidValue / counterMid
+
+				var GoalWage = totalGoalWage / counterGoal
+				var GoalOverall = totalGoalOverall / counterGoal
+				var GoalPot = totalGoalPot / counterGoal
+				var GoalValue = totalGoalValue / counterGoal
+
+				var AtkWage2 = totalAtkWage2 / counterAtk2
+				var AtkOverall2 = totalAtkOverall2 / counterAtk2
+				var AtkPot2 = totalAtkPot2 / counterAtk2
+				var AtkValue2 = totalAtkValue2 / counterAtk2
+
+				var DefWage2 = totalDefWage2 / counterDef2
+				var DefOverall2 = totalDefOverall2 / counterDef2
+				var DefPot2 = totalDefPot2 / counterDef2
+				var DefValue2 = totalDefValue2 / counterDef2
+
+				var MidWage2 = totalMidWage2 / counterMid2
+				var MidOverall2 = totalMidOverall2 / counterMid2
+				var MidPot2 = totalMidPot2 / counterMid2
+				var MidValue2 = totalMidValue2 / counterMid2
+
+				var GoalWage2 = totalGoalWage2 / counterGoal2
+				var GoalOverall2 = totalGoalOverall2 / counterGoal2
+				var GoalPot2 = totalGoalPot2 / counterGoal2
+				var GoalValue2 = totalGoalValue2 / counterGoal2
+
+				if(counterAtk==0){
+					AtkWage=0
+					AtkOverall=0
+					AtkPot=0
+					AtkValue=0
+				}
+				if(counterDef==0){
+					DefWage=0
+					DefOverall=0
+					DefPot=0
+					DefValue=0
+				}
+				if (counterMid==0){
+					MidWage=0
+					MidOverall=0
+					MidPot=0
+					MidValue=0
+				}
+				if(counterGoal==0){
+					GoalWage=0
+					GoalOverall=0
+					GoalPot=0
+					GoalValue=0
+				}
+
+				if(counterAtk2==0){
+					AtkWage2=0
+					AtkOverall2=0
+					AtkPot2=0
+					AtkValue2=0
+				}
+				if(counterDef2==0){
+					DefWage2=0
+					DefOverall2=0
+					DefPot2=0
+					DefValue2=0
+				}
+				if (counterMid2==0){
+					MidWage2=0
+					MidOverall2=0
+					MidPot2=0
+					MidValue2=0
+				}
+				if(counterGoal2==0){
+					GoalWage2=0
+					GoalOverall2=0
+					GoalPot2=0
+					GoalValue2=0
+				}
+
+				var combinedWage=[{name:'Attacker', values:[{name: 'Country1',value: AtkWage}, {name:'Country2', value: AtkWage2}]},
+				{name:'Goalkeeper', values:[{name: 'Country1',value: GoalWage}, {name:'Country2', value: GoalWage2}]},
+				{name:'Midfielder', values:[{name: 'Country1',value: MidWage}, {name:'Country2', value: MidWage2}]},
+				{name:'Defender', values:[{name: 'Country1',value: DefWage}, {name:'Country2', value: DefWage2}]}]
+				
+				var combinedOverall=[{name:'Attacker', values:[{name: 'Country1',value: AtkOverall}, {name:'Country2', value: AtkOverall2}]},
+				{name:'Goalkeeper', values:[{name: 'Country1',value: GoalOverall}, {name:'Country2', value: GoalOverall2}]},
+				{name:'Midfielder', values:[{name: 'Country1',value: MidOverall}, {name:'Country2', value: MidOverall2}]},
+				{name:'Defender', values:[{name: 'Country1',value: DefOverall}, {name:'Country2', value: DefOverall2}]}]
+
+				var combinedPot=[{name:'Attacker', values:[{name: 'Country1',value: AtkPot}, {name:'Country2', value: AtkPot2}]},
+				{name:'Goalkeeper', values:[{name: 'Country1',value: GoalPot}, {name:'Country2', value: GoalPot2}]},
+				{name:'Midfielder', values:[{name: 'Country1',value: MidPot}, {name:'Country2', value: MidPot2}]},
+				{name:'Defender', values:[{name: 'Country1',value: DefPot}, {name:'Country2', value: DefPot2}]}]
+
+				var combinedValue=[{name:'Attacker', values:[{name: 'Country1',value: AtkValue}, {name:'Country2', value: AtkValue2}]},
+				{name:'Goalkeeper', values:[{name: 'Country1',value: GoalValue}, {name:'Country2', value: GoalValue2}]},
+				{name:'Midfielder', values:[{name: 'Country1',value: MidValue}, {name:'Country2', value: MidValue2}]},
+				{name:'Defender', values:[{name: 'Country1',value: DefValue}, {name:'Country2', value: DefValue2}]}]
+
+				var maxAvgWage=Math.max(AtkWage, DefWage,MidWage,GoalWage)
+				var maxAvgWage2=Math.max(AtkWage2, DefWage2,MidWage2,GoalWage2)
+				
+				var maxAvgValue=Math.max(AtkValue, DefValue,MidValue,GoalValue)
+				var maxAvgValue2=Math.max(AtkValue2, DefValue2,MidValue2,GoalValue2)
+
+				var maxAvgOverall=Math.max(AtkOverall, DefOverall,MidOverall,GoalOverall)
+				var maxAvgOverall2=Math.max(AtkOverall2, DefOverall2,MidOverall2,GoalOverall2)
+
+				var maxAvgPot=Math.max(AtkPot, DefPot,MidPot,GoalPot)
+				var maxAvgPot2=Math.max(AtkPot2, DefPot2,MidPot2,GoalPot2)
+
+				var highestMaxWage=Math.max(maxAvgWage,maxAvgWage2)
+				var highestMaxValue=Math.max(maxAvgValue,maxAvgValue2)
+				var highestMaxOverall=Math.max(maxAvgOverall,maxAvgOverall2)
+				var highestMaxPot=Math.max(maxAvgPot,maxAvgPot2)
+
+				var xScale = d3v4.scaleBand().range ([0, svgWidth]).padding(0.4),
+				yScaleWage = d3v4.scaleLinear().range ([svgHeight, 0]),
+				yScaleOverall = d3v4.scaleLinear().range ([svgHeight, 0]),
+				yScaleValue = d3v4.scaleLinear().range ([svgHeight, 0]),
+				yScalePot = d3v4.scaleLinear().range ([svgHeight, 0])				
+
+				xScale.domain([data.map(function(d) { return d.Role; })]);
+				yScaleWage.domain([0, (highestMaxWage+2000)]); 
+				yScaleOverall.domain([0, (highestMaxOverall+20)]); 
+				yScaleValue.domain([0, (highestMaxValue+100000)]); 
+				yScalePot.domain([0, (highestMaxPot+20)]); 
+
+				var gWage = d3v4.select("#wagebar")
+				var current=-40
+
+				d3v4.select("#wagey")
+				.remove()
+
+				d3v4.select("#wagebar").append("g")
+			 .attr("id","wagey")
+			 .call(d3v4.axisLeft(yScaleWage))
+
+			 var graphWage = gWage.selectAll(".position")
+				.data(combinedWage)
+				.enter()
+				.append("g")
+				
+				var bars=gWage.selectAll("rect")
+					.remove()
+					.exit()
+
+				var tip = d3v4.tip()
+				.attr('class', 'd3-tip')
+				.offset([-10, 0])
+				.html(function(d) {
+					
+					return "<strong>Wage:</strong> <span style='color:red'>" + formatDecimal(d.value	)  + "</span>";
+				})
+				graphWage.call(tip)
+
+				graphWage.selectAll("rect")
+					.data(function(d) { 
+						return d.values; })
+					.enter()
+					.append("rect")
+					.attr("x",  function(d, i) { 
+						if(i%2==0){   
+							var a= current+111
+							current=a
+							return a;  //Bar width of 20 plus 1 for padding 
+						} else {
+							return current+30
+						}
+					})
+					.attr("id",function(d,i){return i})
+					.attr("y", function(d) { return yScaleWage(d.value); } )
+					.attr("width", 30)   
+					.attr("height", function(d,i){ 
+						return svgHeight - yScaleWage(d.value); 
+					})
+					.style("fill", function(d,i) {
+						if(i%2==0){   
+							return "#9e69ee"
+						} else {
+							return "#6137A1"
+						}
+					})
+					.on('mouseover', tip.show)
+      		.on('mouseout', tip.hide);
+
+						// Legend
+				var legendWage = gWage.selectAll(".legend")
+						.data(clickedName.slice())
+						.enter()
+						.append("g")
+							.attr("class", "legend")
+							.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+					
+				var color = d3v3.scale.ordinal().range(["#9e69ee", "#6137A1"]);
+
+				legendWage.append("rect")
+						.attr("x", svgWidth - 28)
+						.attr("width", 18)
+						.attr("height", 18)
+						.style("fill", color);
+
+				legendWage.append("text")
+						.attr("x", svgWidth-3)
+						.attr("y", 8)
+						.attr("dy", ".35em")
+						.style("text-anchor", "start")
+						.text(function(d) { return d; });
+
+			//VALUE
+				var gValue = d3v4.select("#Valuebar")
+				var current=-40
+
+				d3v4.select("#Valuey")
+				.remove()
+
+				d3v4.select("#Valuebar").append("g")
+			 .attr("id","Valuey")
+			 .call(d3v4.axisLeft(yScaleValue))
+
+			 var graphValue = gValue.selectAll(".position")
+				.data(combinedValue)
+				.enter()
+				.append("g")
+
+				var bars=gValue.selectAll("rect")
+					.remove()
+					.exit()
+
+				var tip = d3v4.tip()
+				.attr('class', 'd3-tip')
+				.offset([-10, 0])
+				.html(function(d) {
+					var formatDecimal = d3.format(".2f")
+					return "<strong>Value:</strong> <span style='color:red'>" + formatDecimal(d.value	)  + "</span>";
+				})
+				graphValue.call(tip)
+
+				graphValue.selectAll("rect")
+					.data(function(d) { 
+						return d.values; })
+					.enter()
+					.append("rect")
+					.attr("x",  function(d, i) { 
+						if(i%2==0){   
+							var a= current+111
+							current=a
+							return a;  //Bar width of 20 plus 1 for padding 
+						} else {
+							return current+30
+						}
+					})
+					.attr("id",function(d,i){return i})
+					.attr("y", function(d) { return yScaleValue(d.value); } )
+					.attr("width", 30)   
+					.attr("height", function(d,i){ 
+						return svgHeight - yScaleValue(d.value); 
+					})
+					.style("fill", function(d,i) {
+						if(i%2==0){   
+							return "#9e69ee"
+						} else {
+							return "#6137A1"
+						}
+					})
+					.on('mouseover', tip.show)
+      		.on('mouseout', tip.hide);
+
+						// Legend
+				var legendValue = gValue.selectAll(".legend")
+						.data(clickedName.slice())
+						.enter()
+						.append("g")
+							.attr("class", "legend")
+							.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+					
+				var color = d3v3.scale.ordinal().range(["#9e69ee", "#6137A1"]);
+
+				legendValue.append("rect")
+						.attr("x", svgWidth - 28)
+						.attr("width", 18)
+						.attr("height", 18)
+						.style("fill", color);
+
+				legendValue.append("text")
+						.attr("x", svgWidth-3)
+						.attr("y", 8)
+						.attr("dy", ".35em")
+						.style("text-anchor", "start")
+						.text(function(d) { return d; });
+
+				//Overall
+				var gOverall = d3v4.select("#Overallbar")
+				var current=-40
+
+				d3v4.select("#Overally")
+				.remove()
+
+				d3v4.select("#Overallbar").append("g")
+			 .attr("id","Overally")
+			 .call(d3v4.axisLeft(yScaleOverall))
+
+			 var graphOverall = gOverall.selectAll(".position")
+				.data(combinedOverall)
+				.enter()
+				.append("g")
+
+				var bars=gOverall.selectAll("rect")
+					.remove()
+					.exit()
+
+				var tip = d3v4.tip()
+				.attr('class', 'd3-tip')
+				.offset([-10, 0])
+				.html(function(d) {
+					var formatDecimal = d3.format(".2f")
+					return "<strong>Overall:</strong> <span style='color:red'>" + formatDecimal(d.value)  + "</span>";
+				})
+				graphOverall.call(tip)
+
+				graphOverall.selectAll("rect")
+					.data(function(d) { 
+						return d.values; })
+					.enter()
+					.append("rect")
+					.attr("x",  function(d, i) { 
+						if(i%2==0){   
+							var a= current+111
+							current=a
+							return a;  //Bar width of 20 plus 1 for padding 
+						} else {
+							return current+30
+						}
+					})
+					.attr("id",function(d,i){return i})
+					.attr("y", function(d) { return yScaleOverall(d.value); } )
+					.attr("width", 30)   
+					.attr("height", function(d,i){ 
+						return svgHeight - yScaleOverall(d.value); 
+					})
+					.style("fill", function(d,i) {
+						if(i%2==0){   
+							return "#9e69ee"
+						} else {
+							return "#6137A1"
+						}
+					})
+					.on('mouseover', tip.show)
+      		.on('mouseout', tip.hide);
+
+					// Legend
+				var legendOverall = gOverall.selectAll(".legend")
+						.data(clickedName.slice())
+						.enter()
+						.append("g")
+							.attr("class", "legend")
+							.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+					
+				var color = d3v3.scale.ordinal().range(["#9e69ee", "#6137A1"]);
+
+				legendOverall.append("rect")
+						.attr("x", svgWidth - 28)
+						.attr("width", 18)
+						.attr("height", 18)
+						.style("fill", color);
+
+				legendOverall.append("text")
+						.attr("x", svgWidth-3)
+						.attr("y", 8)
+						.attr("dy", ".35em")
+						.style("text-anchor", "start")
+						.text(function(d) { return d; });
+
+				//Pot
+				
+				var current=-40
+
+				d3v4.select("#Poty")
+				.remove()
+				
+				var gPot = d3v4.select("#Potbar")
+				d3v4.select("#Potbar").append("g")
+			 .attr("id","Poty")
+			 .call(d3v4.axisLeft(yScalePot))
+
+			 var graphPot = gPot.selectAll(".position")
+				.data(combinedPot)
+				.enter()
+				.append("g")
+
+				var bars=gPot.selectAll("rect")
+					.remove()
+					.exit()
+
+				var tip = d3v4.tip()
+				.attr('class', 'd3-tip')
+				.offset([-10, 0])
+				.html(function(d) {
+					var formatDecimal = d3.format(".2f")
+					return "<strong>Potential:</strong> <span style='color:red'>" + formatDecimal(d.value)  + "</span>";
+				})
+				graphPot.call(tip)
+
+				graphPot.selectAll("rect")
+					.data(function(d) { 
+						return d.values; })
+					.enter()
+					.append("rect")
+					.attr("x",  function(d, i) { 
+						if(i%2==0){   
+							var a= current+111
+							current=a
+							return a;  //Bar width of 20 plus 1 for padding 
+						} else {
+							return current+30
+						}
+					})
+					.attr("id",function(d,i){return i})
+					.attr("y", function(d) { return yScalePot(d.value); } )
+					.attr("width", 30)   
+					.attr("height", function(d,i){ 
+						return svgHeight - yScalePot(d.value); 
+					})
+					.style("fill", function(d,i) {
+						if(i%2==0){   
+							return "#9e69ee"
+						} else {
+							return "#6137A1"
+						}
+					})
+					.on('mouseover', tip.show)
+      		.on('mouseout', tip.hide);
+
+					// Legend
+				var legendPot = gPot.selectAll(".legend")
+						.data(clickedName.slice())
+						.enter()
+						.append("g")
+							.attr("class", "legend")
+							.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+					
+				var color = d3v3.scale.ordinal().range(["#9e69ee", "#6137A1"]);
+
+				legendPot.append("rect")
+						.attr("x", svgWidth - 28)
+						.attr("width", 18)
+						.attr("height", 18)
+						.style("fill", color);
+
+				legendPot.append("text")
+						.attr("x", svgWidth-3)
+						.attr("y", 8)
+						.attr("dy", ".35em")
+						.style("text-anchor", "start")
+						.text(function(d) { return d; });
+
+				
+					
+				//Animation
+				// gValue.selectAll("rect")
+				// .attr("height", 0)
+				// .attr("y", svgHeight )
+				// .transition()
+				// .duration(1000)
+				// .delay(function (d, i) {
+				// return i * 50;
+				// }).attr("height", function(d,i){ 
+				// 	return svgHeight - yScaleValue(d); 
+				// })
+				// .attr("y", function(d) { return yScaleValue(d); } )
+
+				// gOverall.selectAll("rect")
+				// .attr("height", 0)
+				// .attr("y", svgHeight )
+				// .transition()
+				// .duration(1000)
+				// .delay(function (d, i) {
+				// return i * 50;
+				// }).attr("height", function(d,i){ 
+				// 	return svgHeight - yScaleOverall(d); 
+				// })
+				// .attr("y", function(d) { return yScaleOverall(d); } )
+
+				//  graphWage.selectAll("rect")
+				//  .attr("height", 0)
+				//  .attr("y", svgHeight )
+				//  .transition()
+				// 	.duration(1000)
+				// 	.delay(function (d, i) {
+				// 	return i * 50;
+				// 	}).attr("height", function(d,i){ 
+				// 		return svgHeight - yScaleWage(d); 
+				// 	})
+				// 	.attr("y", function(d) { return yScaleWage(d); } )
+
+				// gPot.selectAll("rect")
+				// .attr("height", 0)
+				// .attr("y", svgHeight )
+				// .transition()
+				// .duration(1000)
+				// .delay(function (d, i) {
+				// return i * 50;
+				// }).attr("height", function(d,i){ 
+				// 	return svgHeight - yScalePot(d); 
+				// })
+				// .attr("y", function(d) { return yScalePot(d); } )
+
+				wagediv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				wagediv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				valuediv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				valuediv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				overalldiv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				overalldiv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				potentialdiv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				potentialdiv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+			}
+
+			
+		}
+			
+			// var svg = d3v4.select("body").append("svg").attr("style","margin-left: 22%;").attr("height","500px");
+			// var path = d3v4.geoPath().projection(d3v4.geoMercator());
+			// d3v4.json("https://unpkg.com/world-atlas@1/world/110m.json", function(error, world) {
+			//   if (error) throw error;
+			//   svg.selectAll("path")
+			// 	 .data(topojson.feature(world,world.objects.countries).features)
+			// 	 .enter()
+			// 	 .append("path")
+			// 	 .attr("d", path)
+			// 	 .style("fill", function(d) {
+			// 		return color(countObj[d.Nationality]); // get rate value for property matching data ID
+			// 		// pass rate value to color function, return color based on domain and range
+			// 	})
+			// });
+
+			
+		
+		// var color = d3v4.scaleThreshold()
+		// 	.domain([0.02, 0.04, 0.06, 0.08, 0.10])
+		// 	.range(["#f2f0f7", "#dadaeb", "#bcbddc", "#9e9ac8", "#756bb1", "#54278f"]);
+
+		
+		//Initiate Graphs
+		d3v4.csv("data/Fifa18.csv", function(d) {
+
+
+			var body= d3v4.select("#mainCT")
+					.append("div")
+					.attr("class","maindiv")
+					
+			var body2= body
+					.append("div")
+					.attr("class","maintextdiv")
+			var body3= body
+					.append("div")
+					.attr("class","maintextdiv2")
+			var formatDecimal = d3.format(".2f")
+			var formatThousand = d3.format(",")
+			var wagediv = body2.append("div").attr("class", "textdiv").attr("id", "wagediv")
+			var valuediv = body2.append("div").attr("class", "textdiv").attr("id", "valuediv")
+			var overalldiv = body3.append("div").attr("class", "textdiv").attr("id", "overalldiv")
+			var potentialdiv = body3.append("div").attr("class", "textdiv").attr("id", "potentialdiv")
+			var maxWage = d3v4.max(d, function(d) { return parseInt(d.Wage); });
+			var maxValue = d3v4.max(d, function(d) { return parseInt(d.Value); });
+			var maxOverall = d3v4.max(d, function(d) { return parseInt(d.Overall); });
+			var maxPot = d3v4.max(d, function(d) { return parseInt(d.Potential); });
+			
+			d.forEach(function(d) {
+				if(parseInt(d.Wage) === maxWage){
+					wagename=d.Name
+					wageage=d.Age
+					wageclub=d.Club
+					wagenat=d.Nationality
+					wagenum=d.Wage
+				} 
+				if (parseInt(d.Value) === maxValue){
+					valuename=d.Name
+					valueage=d.Age
+					valueclub=d.Club
+					valuenat=d.Nationality
+					valuenum=d.Value
+				}
+				if (parseInt(d.Overall) === maxOverall){
+					overallname=d.Name
+					overallage=d.Age
+					overallclub=d.Club
+					overallnat=d.Nationality
+					overallnum=d.Overall
+				}
+				if (parseInt(d.Potential) === maxPot){
+					potname=d.Name
+					potage=d.Age
+					potclub=d.Club
+					potnat=d.Nationality
+					potnum=d.Potential
+				}
+			});
+
+			//WAGE
+			var wage= wagediv
+					.append("h2")
+					.attr("id","wagetitle")
+					.text("Highest Wage")
+
+			var wagenamediv= wagediv
+						.append("h3")
+						.attr("id","wagename")
+						.text("Name: " + wagename)
+
+			var wageagediv= wagediv
+						.append("h3")
+						.attr("id","wageage")
+						.text("Age: "+ wageage)
+
+			var wageclubdiv= wagediv
+						.append("h3")
+						.attr("id","wageclub")
+						.text("Club: "+ wageclub)
+
+			var wagenatdiv= wagediv
+						.append("h3")
+						.attr("id","wagenat")
+						.text("Nationality: "+ wagenat)
+
+			var wagenumdiv= wagediv
+						.append("h3")
+						.attr("id","wagenum")
+						.text("Wage: "+ formatThousand(wagenum))
+
+			//VALUE
+			var value= valuediv
+					.append("h2")
+					.attr("id","valuetitle")
+					.text("Highest Value")
+					
+			var valuenamediv= valuediv
+						.append("h3")
+						.attr("id","valuename")
+						.text("Name: " + valuename)
+
+			var valueagediv= valuediv
+						.append("h3")
+						.attr("id","valueage")
+						.text("Age: " + valueage)
+
+			var valueclubdiv= valuediv
+						.append("h3")
+						.attr("id","valueclub")
+						.text("Club: " + valueclub)
+						
+			var valuenatdiv= valuediv
+						.append("h3")
+						.attr("id","valuenat")
+						.text("Nationality: " + valuenat)
+
+			var valuenumdiv= valuediv
+						.append("h3")
+						.attr("id","valuenum")
+						.text("Value: "+ formatThousand(valuenum))
+
+			//OVERALL
+			var overall= overalldiv
+					.append("h2")
+					.attr("id","overalltitle")
+					.text("Highest Overall")
+					
+			var overallnamediv= overalldiv
+						.append("h3")
+						.attr("id","overallname")
+						.text("Name: " + overallname)
+
+			var overallagediv= overalldiv
+						.append("h3")
+						.attr("id","overallage")
+						.text("Age: " + overallage)
+
+			var overallclubdiv= overalldiv
+						.append("h3")
+						.attr("id","overallclub")
+						.text("Club: " + overallclub)
+
+			var overallnatdiv= overalldiv
+						.append("h3")
+						.attr("id","overallnat")
+						.text("Nationality: " + overallnat)
+
+			var overallnumdiv= overalldiv
+						.append("h3")
+						.attr("id","overallnum")
+						.text("Overall: "+ overallnum)
+						
+			//POTENTIAL
+			var potential= potentialdiv
+						.append("h2")
+						.attr("id","potentialtitle")
+						.text("Highest Potential")
+					
+			var potentialnamediv= potentialdiv
+							.append("h3")
+							.attr("id","potentialname")
+							.text("Name: " + potname)
+
+			var potentialagediv= potentialdiv
+							.append("h3")
+							.attr("id","potentialage")
+							.text("Age: " + potage)
+
+			var potentialclubdiv= potentialdiv
+							.append("h3")
+							.attr("id","potentialclub")
+							.text("Club: " + potclub)
+
+			var potentialnatdiv= potentialdiv
+							.append("h3")
+							.attr("id","potentialnat")
+							.text("Nationality: " + potnat)
+
+			var potentialnumdiv= potentialdiv
+						.append("h3")
+						.attr("id","potentialnum")
+						.text("Potential: "+ potnum)
+							
+			//Bar Charts
+			
+			var svgWidth = 500;
+			var svgHeight = 300;
+			var svg = d3v4.select("body").append('svg')
+				.attr("width", svgWidth)
+				.attr("height", 1000)
+				.attr("class", "bar-chart");
+			
+			var xScale = d3v4.scaleBand().range ([0, svgWidth]).padding(0.4),
+			yScaleWage = d3v4.scaleLinear().range ([svgHeight, 0]),
+			yScaleOverall = d3v4.scaleLinear().range ([svgHeight, 0]),
+			yScaleValue = d3v4.scaleLinear().range ([svgHeight, 0]),
+			yScalePot = d3v4.scaleLinear().range ([svgHeight, 0])
+			
+			var totalAtkWage=0,totalAtkOverall=0, totalAtkPot=0, totalAtkValue=0, 
+			totalDefWage=0,totalDefOverall=0, totalDefPot=0, totalDefValue=0, 
+			totalMidWage=0, totalMidOverall=0,totalMidPot=0,totalMidValue=0,
+			totalGoalWage=0, totalGoalOverall=0,totalGoalPot=0,totalGoalValue=0
+
+			var counterAtk=0,counterDef=0,counterGoal=0,counterMid=0
+
+			d.forEach(function(d) {
+				if(d.Role=== "Attacker"){
+					totalAtkWage=totalAtkWage+parseInt(d.Wage)
+					totalAtkOverall=totalAtkOverall+parseInt(d.Overall)
+					totalAtkPot=totalAtkPot+parseInt(d.Potential)
+					totalAtkValue=totalAtkValue+parseInt(d.Value)
+					counterAtk=counterAtk+1
+				}
+
+				if(d.Role=== "Defender"){
+					totalDefWage=totalDefWage+parseInt(d.Wage)
+					totalDefOverall=totalDefOverall+parseInt(d.Overall)
+					totalDefPot=totalDefPot+parseInt(d.Potential)
+					totalDefValue=totalDefValue+parseInt(d.Value)
+					counterDef=counterDef+1
+				}
+
+				if(d.Role=== "Goalkeeper"){
+					totalGoalWage=totalGoalWage+parseInt(d.Wage)
+					totalGoalOverall=totalGoalOverall+parseInt(d.Overall)
+					totalGoalPot=totalGoalPot+parseInt(d.Potential)
+					totalGoalValue=totalGoalValue+parseInt(d.Value)
+					counterGoal=counterGoal+1
+				}
+
+				if(d.Role=== "Midfielder"){
+					totalMidWage=totalMidWage+parseInt(d.Wage)
+					totalMidOverall=totalMidOverall+parseInt(d.Overall)
+					totalMidPot=totalMidPot+parseInt(d.Potential)
+					totalMidValue=totalMidValue+parseInt(d.Value)
+					counterMid=counterMid+1
+				}
+			})
+
+			var AtkWage = totalAtkWage / counterAtk
+			var AtkOverall = totalAtkOverall / counterAtk
+			var AtkPot = totalAtkPot / counterAtk
+			var AtkValue = totalAtkValue / counterAtk
+
+			var DefWage = totalDefWage / counterDef
+			var DefOverall = totalDefOverall / counterDef
+			var DefPot = totalDefPot / counterDef
+			var DefValue = totalDefValue / counterDef
+
+			var MidWage = totalMidWage / counterMid
+			var MidOverall = totalMidOverall / counterMid
+			var MidPot = totalMidPot / counterMid
+			var MidValue = totalMidValue / counterMid
+
+			var GoalWage = totalGoalWage / counterGoal
+			var GoalOverall = totalGoalOverall / counterGoal
+			var GoalPot = totalGoalPot / counterGoal
+			var GoalValue = totalGoalValue / counterGoal
+
+			var wageData=[AtkWage, GoalWage, MidWage, DefWage]
+			var OverallData=[AtkOverall, GoalOverall, MidOverall, DefOverall]
+			var ValueData=[AtkValue, GoalValue, MidValue, DefValue]
+			var PotData=[AtkPot, GoalPot, MidPot, DefPot]
+
+			var maxAvgWage=Math.max(AtkWage, DefWage,MidWage,GoalWage)
+			var maxAvgOverall=Math.max(AtkOverall, DefOverall,MidOverall,GoalOverall)
+			var maxAvgValue=Math.max(AtkValue, DefValue,MidValue,GoalValue)
+			var maxAvgPot=Math.max(AtkPot, DefPot,MidPot,GoalPot)
+
+			var current=-45
+			
+			xScale.domain(d.map(function(d) { return d.Role; }));
+			yScaleWage.domain([0, (maxAvgWage+2000)]); 
+			yScaleOverall.domain([0, (maxAvgOverall+20)]); 
+			yScaleValue.domain([0, (maxAvgValue+100000)]); 
+			yScalePot.domain([0, (maxAvgPot+20)]); 
+
+			var gWage = svg.append("g")
+               .attr("transform", "translate(" + 250 + "," + 100 + ")")
+							 .attr("id","wagebar");
+
+			gWage.append("g")
+			.attr("transform", "translate(0," + svgHeight + ")")
+			.attr("id","wagex")
+			.call(d3v4.axisBottom(xScale));
+
+			gWage.append("g")
+			.attr("id","wagey")
+			.call(d3v4.axisLeft(yScaleWage));
+
+			var tip = d3v4.tip()
+				.attr('class', 'd3-tip')
+				.offset([-10, 0])
+				.html(function(d) {
+					return "<strong>Wage:</strong> <span style='color:red'>" + formatDecimal(d	)  + "</span>";
+				})
+				gWage.call(tip)
+
+				gWage.selectAll("rect")
+			.data(wageData)
+			.enter()
+			.append("rect")
+			.attr("x",  function(d, i) {    
+				var a= current+111
+				current=a
+				return a;  //Bar width of 20 plus 1 for padding 
+				
+			})
+			.attr("id",function(d,i){return i})		
+			.attr("width", 30)   
+			.style("fill", "#9e69ee")
+			.attr("y", function(d) { return yScaleWage(d) } )
+			.attr("height", function(d,i){ 
+				return svgHeight - yScaleWage(d)
+			
+			})
+			.on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+			
+			gWage.append("text")
+        .attr("x", (svgWidth / 2))             
+        .attr("y", 0)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+				.text("Average Wage by Position")
+
+			//Value Bar
+			var current=-45
+			var gValue = svg.append("g")
+               .attr("transform", "translate(" + 1050 + "," + 100 + ")")
+							 .attr("id","Valuebar");
+
+			gValue.append("g")
+			.attr("transform", "translate(0," + svgHeight + ")")
+			.attr("id","Valuex")
+			.call(d3v4.axisBottom(xScale));
+
+			gValue.append("g")
+			.attr("id","Valuey")
+			.call(d3v4.axisLeft(yScaleValue));
+
+			var tip = d3v4.tip()
+				.attr('class', 'd3-tip')
+				.offset([-10, 0])
+				.html(function(d) {
+					var formatDecimal = d3.format(".2f")
+					return "<strong>Value:</strong> <span style='color:red'>" + formatDecimal(d	)  + "</span>";
+				})
+				gValue.call(tip)
+
+				gValue.selectAll("rect")
+			.data(ValueData)
+			.enter()
+			.append("rect")
+			.attr("x",  function(d, i) {    
+				var a= current+111
+				current=a
+				return a;  //Bar width of 20 plus 1 for padding 
+				
+			})
+			.attr("id",function(d,i){return i})
+			.attr("y", function(d) { return yScaleValue(d); } )
+			.attr("width", 30)   
+			.attr("height", function(d,i){ 
+				return svgHeight - yScaleValue(d); 
+			
+			})
+			.style("fill", "#9e69ee")
+			.on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+
+			gValue.append("text")
+        .attr("x", (svgWidth / 2))             
+        .attr("y", 0)
+        .attr("text-anchor", "middle")  
+				.style("font-size", "16px") 
+				.attr("class","barTitle")
+				.text("Average Value by Position")
+				
+			//Overall Bar
+			var current=-45
+			var gOverall = svg.append("g")
+               .attr("transform", "translate(" + 250 + "," + 600 + ")")
+							 .attr("id","Overallbar");
+
+			gOverall.append("g")
+			.attr("transform", "translate(0," + svgHeight + ")")
+			.attr("id","Overallx")
+			.call(d3v4.axisBottom(xScale));
+
+			gOverall.append("g")
+			.attr("id","Overally")
+			.call(d3v4.axisLeft(yScaleOverall));
+
+			var tip = d3v4.tip()
+				.attr('class', 'd3-tip')
+				.offset([-10, 0])
+				.html(function(d) {
+					var formatDecimal = d3.format(".2f")
+					return "<strong>Overall:</strong> <span style='color:red'>" + formatDecimal(d	)  + "</span>";
+				})
+				gOverall.call(tip)
+
+				gOverall.selectAll("rect")
+			.data(OverallData)
+			.enter()
+			.append("rect")
+			.attr("x",  function(d, i) {    
+				var a= current+111
+				current=a
+				return a;  //Bar width of 20 plus 1 for padding 
+				
+			})
+			.attr("id",function(d,i){return i})
+			.attr("y", function(d) { return yScaleOverall(d); } )
+			.attr("width", 30)   
+			.attr("height", function(d,i){ 
+				return svgHeight - yScaleOverall(d); 
+			
+			})
+			.style("fill", "#9e69ee")
+			.on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+
+			gOverall.append("text")
+        .attr("x", (svgWidth / 2))             
+        .attr("y", 0)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+				.text("Average Overall by Position")			
+
+		//Pot Bar
+		var current=-45
+			var gPot = svg.append("g")
+               .attr("transform", "translate(" + 1050 + "," + 600 + ")")
+							 .attr("id","Potbar");
+
+			gPot.append("g")
+			.attr("transform", "translate(0," + svgHeight + ")")
+			.attr("id","Potx")
+			.call(d3v4.axisBottom(xScale));
+
+			gPot.append("g")
+			.attr("id","Poty")
+			.call(d3v4.axisLeft(yScalePot));
+
+			var tip = d3v4.tip()
+				.attr('class', 'd3-tip')
+				.offset([-10, 0])
+				.html(function(d) {
+					var formatDecimal = d3.format(".2f")
+					return "<strong>Potential:</strong> <span style='color:red'>" + formatDecimal(d	)  + "</span>";
+				})
+				gPot.call(tip)
+
+				gPot.selectAll("rect")
+			.data(PotData)
+			.enter()
+			.append("rect")
+			.attr("x",  function(d, i) {    
+				var a= current+111
+				current=a
+				return a;  //Bar width of 20 plus 1 for padding 
+				
+			})
+			.attr("id",function(d,i){return i})
+			.attr("y", function(d) { return yScalePot(d); } )
+			.attr("width", 30)   
+			.attr("height", function(d,i){ 
+				return svgHeight - yScalePot(d); 
+			
+			})
+			.style("fill", "#9e69ee")
+			.on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+
+				gPot.append("text")
+        .attr("x", (svgWidth / 2))             
+        .attr("y", 0)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+				.text("Average Potential by Position")
+		
+
+				//Animation
+
+
+				gValue.selectAll("rect")
+				.attr("height", 0)
+				.attr("y", svgHeight )
+				.transition()
+				.duration(1000)
+				.delay(function (d, i) {
+				return i * 50;
+				}).attr("height", function(d,i){ 
+					return svgHeight - yScaleValue(d); 
+				})
+				.attr("y", function(d) { return yScaleValue(d); } )
+
+				gOverall.selectAll("rect")
+				.attr("height", 0)
+				.attr("y", svgHeight )
+				.transition()
+				.duration(1000)
+				.delay(function (d, i) {
+				return i * 50;
+				}).attr("height", function(d,i){ 
+					return svgHeight - yScaleOverall(d); 
+				})
+				.attr("y", function(d) { return yScaleOverall(d); } )
+
+				gWage.selectAll("rect")
+				.attr("height", 0)
+				.attr("y", svgHeight )
+				.transition()
+				.duration(1000)
+				.delay(function (d, i) {
+				return i * 50;
+				}).attr("height", function(d,i){ 
+					return svgHeight - yScaleWage(d); 
+				})
+				.attr("y", function(d) { return yScaleWage(d); } )
+
+				gPot.selectAll("rect")
+				.attr("height", 0)
+				.attr("y", svgHeight )
+				.transition()
+				.duration(1000)
+				.delay(function (d, i) {
+				return i * 50;
+				}).attr("height", function(d,i){ 
+					return svgHeight - yScalePot(d); 
+				})
+				.attr("y", function(d) { return yScalePot(d); } )
+
+				wagediv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				wagediv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				valuediv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				valuediv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				overalldiv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				overalldiv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				potentialdiv.selectAll('h3')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+				potentialdiv.selectAll('h2')
+				.attr('style','opacity:0')
+				.transition()
+				.duration(1000)
+				.attr('style','opacity:1')
+
+			
+		})
+		
+		
+	</script>
+	<script src="./particles.js" type="application/javascript">
+	</script>
+	
+</body>
+</html>

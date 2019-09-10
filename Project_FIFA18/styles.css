@@ -1,0 +1,482 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font:normal 100% Lato, Helvetica, sans-serif;
+  width: 100vw;
+  background-image: url("fifabg2.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+  
+  
+}
+p{
+	font:bold 90% Lato, Helvetica, sans-serif;
+	color:white;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+h1{
+	margin:0;
+}
+
+svg{
+	width:100%;
+	margin:0px auto;
+}
+
+.footer{
+	width:100%;
+	position:relative;
+	bottom:-30px;
+	font-weight: 300;
+	font-size:0.8em;
+	letter-spacing:0.3px;
+	color:rgba(255,255,255,0.8);
+	margin:0 auto;
+}
+.body{
+	width: 100vw;
+}
+.main{
+	width:100%;
+	margin: 0 auto;
+		padding-top:4%;
+}
+
+.title{
+	color:#ffd427;
+	font-weight:800;
+	letter-spacing:1.5px;
+	font-size:2.5em;
+	padding-top:1%;
+}
+
+.btnDiv{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-top:3%;
+
+}
+.or{
+	color:white;
+	font-size:28px;
+	text-align:center;
+}
+.selectionBtn{
+	background:rgba(40,40,64,0.5);
+	height:65vh;
+	border: 6px solid #0fe3ab;
+	border-radius:20px;
+	color:white;
+	font-size:40px;
+	padding:5%;
+	padding-top:7%;
+	margin-right:40px;
+	outline:none;
+
+}
+
+.selectionBtn:hover {
+	background-color: rgba(15,227,171,0.9);
+	transition: background-color .2s ease-in-out;
+}
+
+.selectionBtn:hover svg path{
+	fill:#282840;
+}
+
+
+.selectionBtn:hover .green {
+	color:#282840;
+}
+
+#navigation svg g path{
+	fill:#ffd427;
+}
+
+#navigation #home:hover{
+	background:#ffd427;
+	transition: background-color .2s ease-in-out;
+}
+
+#navigation #home:hover svg g path{
+	fill:#212236;
+	transition: fill .2s ease-in-out;
+}
+
+.home{
+	margin-right:15px;
+	border: 1.5px solid #ffd427; 
+	padding: 9px;
+}
+
+#navigation #player:hover{
+	background:#9e69ee;
+	transition: background-color .2s ease-in-out;
+}
+
+#navigation #player:hover svg path{
+	fill:#212236;
+	transition: fill .2s ease-in-out;
+}
+
+.player{
+	margin-right:15px;
+	border: 1.5px solid #9e69ee; 
+	padding: 9px;
+}
+
+
+.selectionBtn2{
+	background:rgba(40,40,64,0.5);
+	height:65vh;
+	border: 6px solid #9e69ee;
+	border-radius:20px;
+	color:white;
+	font-size:40px;
+	padding:5%;
+	padding-top:7%;
+	outline:none;
+}
+
+.selectionBtn2:hover {
+	background-color: rgba(158,105,238,0.9);
+	transition: background-color .2s ease-in-out;
+}
+
+.selectionBtn2:hover svg path{
+	fill:#282840;
+}
+
+
+.selectionBtn2:hover .purple {
+	color:#282840;
+}
+
+
+
+.purple{
+	color:#9e69ee;
+}
+
+.blue{
+	color:#4dc9ff;
+}
+
+.yellow{
+	color:#ffd427;
+}
+
+.red{
+	color:#f92552;
+}
+
+.green{
+	color:#0fe3ab;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js {
+  position: absolute;
+  top:0;
+  width: 100%;
+  height:1900px;
+  background-color: rgba(40,40,64,0.8);
+  background-position: 50% 50%;
+  z-index:-1;
+}
+
+.maintextdiv{
+	display:flex;
+	flex-direction:row;
+	margin:auto;
+	margin-top:80px;
+	width:700px;
+}
+
+.maintextdiv2{
+	display:flex;
+	flex-direction:row;
+	margin:auto;
+	margin-top:30px;
+	width:700px;
+}
+
+.textdiv{
+width: 290px;
+border-top: solid 2.5px #0fe3ab;
+margin-right:60px;
+padding:4px 0px;
+}
+
+.bar-chart {
+	margin:0px 150px;
+}
+.d3-tip {
+	line-height: 1;
+	padding: 6px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+	box-sizing: border-box;
+	display: inline;
+	font-size: 10px;
+	width: 100%;
+	line-height: 1;
+	color: rgba(0, 0, 0, 0.8);
+	content: "\25BC";
+	position: absolute;
+	text-align: center;
+}
+
+/* Style northward tooltips specifically */
+.d3-tip.n:after {
+	margin: -2px 0 0 0;
+	top: 100%;
+	left: 0;
+}
+
+#mainCT{
+	display:flex;
+	flex-direction:row;
+}
+
+
+h3{
+	color:white;
+	text-align:left;
+
+}
+
+#valuetitle, #wagetitle, #overalltitle, #potentialtitle{
+	color:#0fe3ab;
+	font:bold 165% Lato;
+	text-transform:uppercase;
+	letter-spacing:0.3px;
+
+}
+
+.mapCT{
+	width:1150px; 
+	margin-left: auto; 
+	height: 750px; 
+	margin-top:15px;
+	margin-right: auto;
+}
+
+.overalltitle{
+	text-align:center;
+	color:#ffd427;
+	margin-top:35px;
+	margin-bottom:25px;
+	font-weight: 900;
+	letter-spacing:1px;
+}
+
+.hoverinfo{
+	font:normal 100% Lato;
+	padding:15px;
+}
+
+.resetbtn{
+	padding:10px;
+	background:transparent;
+	border-radius:3px;
+	border:1px solid white;
+	font-weight:bold;
+	color:white;
+	outline:none;
+	margin-left:auto;
+	display:block;
+	margin-right:auto;
+	font-size:11px;
+}
+
+#wagebar text{
+	fill:white;
+}
+
+#wagebar #wagex line {
+	stroke: white;
+}
+
+#wagebar #wagex path {
+	stroke: white;
+}
+
+#wagebar #wagex text {
+	fill: white;
+}
+
+#wagebar #wagey line {
+	stroke: white;
+}
+
+#wagebar #wagey path {
+	stroke: white;
+}
+
+#wagebar #wagey text {
+	fill: white;
+}
+
+#Valuebar text{
+	fill:white;
+}
+
+#Valuebar #Valuex line {
+	stroke: white;
+}
+
+#Valuebar #Valuex path {
+	stroke: white;
+}
+
+#Valuebar #Valuex text {
+	fill: white;
+}
+
+#Valuebar #Valuey line {
+	stroke: white;
+}
+
+#Valuebar #Valuey path {
+	stroke: white;
+}
+
+#Valuebar #Valuey text {
+	fill: white;
+}
+
+#Overallbar text{
+	fill:white;
+}
+
+#Overallbar #Overallx line {
+	stroke: white;
+}
+
+#Overallbar #Overallx path {
+	stroke: white;
+}
+
+#Overallbar #Overallx text {
+	fill: white;
+}
+
+#Overallbar #Overally line {
+	stroke: white;
+}
+
+#Overallbar #Overally path {
+	stroke: white;
+}
+
+#Overallbar #Overally text {
+	fill: white;
+}
+
+#Potbar text{
+	fill:white;
+}
+
+#Potbar #Potx line {
+	stroke: white;
+}
+
+#Potbar #Potx path {
+	stroke: white;
+}
+
+#Potbar #Potx text {
+	fill: white;
+}
+
+#Potbar #Poty line {
+	stroke: white;
+}
+
+#Potbar #Poty path {
+	stroke: white;
+}
+
+#Potbar #Poty text {
+	fill: white;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+
+  background-color: rgba(0,0,0,0.4);
+
+  text-align: center;
+  padding: 7px 0;
+  position: absolute;
+  z-index: 1;
+ top: 100%;
+  left: 50%;
+  margin-top: 8px;
+
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#tooltiphome{
+	 color: #fdc500;
+	 width: 60px;
+	 margin-left: -30px;
+}
+
+#tooltipstatistics{
+	 color: #9e69ee;
+	 width: 100px;
+	 margin-left: -50px;
+}
+
+
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 10px;
+} 
+
+::-webkit-scrollbar-thumb {
+	background-color: #fdc500;
+	border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.3);
+}
+
+.label{
+	font-size:12px;
+	fill:white!important;
+}

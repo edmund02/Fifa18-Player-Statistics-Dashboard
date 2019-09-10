@@ -1,0 +1,500 @@
+﻿Id,Name,Overall,Potential,Role,Position,Age,Nationality,CountryCode,Club,Value,Wage,Pace,Shot,Pass,Dribble,Defend,Physical
+0,Cristiano Ronaldo,94,94,Attacker,LW,32,Portugal,Portugal,Real Madrid CF,95.5M,565K,90,93,82,90,33,80
+1,L. Messi,93,93,Attacker,RW,30,Argentina,Argentina,FC Barcelona,105M,565K,89,90,86,96,26,61
+2,Neymar,92,94,Attacker,LW,25,Brazil,Brazil,Paris Saint-Germain,123M,280K,92,84,79,95,30,60
+3,L. Suárez,92,92,Attacker,ST,30,Uruguay,Uruguay,FC Barcelona,97M,510K,82,90,79,86,42,81
+4,M. Neuer,92,92,Goalkeeper,GK,31,Germany,Germany,FC Bayern Munich,61M,230K,91,90,95,89,60,91
+5,R. Lewandowski,91,91,Attacker,ST,28,Poland,Poland,FC Bayern Munich,92M,355K,81,88,75,85,38,82
+6,De Gea,90,92,Goalkeeper,GK,26,Spain,Spain,Manchester United,64.5M,215K,90,85,87,90,58,86
+7,E. Hazard,90,91,Attacker,LW,26,Belgium,Belgium,Chelsea,90.5M,295K,90,82,84,93,32,66
+8,T. Kroos,90,90,Midfielder,CM,27,Germany,Germany,Real Madrid CF,79M,340K,56,81,88,81,73,70
+9,G. Higuaín,90,90,Attacker,ST,29,Argentina,Argentina,Juventus,77M,275K,79,87,70,83,25,74
+10,Sergio Ramos,90,90,Defender,CB,31,Spain,Spain,Real Madrid CF,52M,310K,76,63,71,71,88,83
+11,K. De Bruyne,89,92,Midfielder,CAM,26,Belgium,Belgium,Manchester City,83M,285K,75,84,88,85,45,75
+12,T. Courtois,89,92,Goalkeeper,GK,25,Belgium,Belgium,Chelsea,59M,190K,85,91,69,88,49,86
+13,A. Sánchez,89,89,Midfielder,LM,28,Chile,Chile,Arsenal,67.5M,265K,86,84,80,89,40,78
+14,L. Modrić,89,89,Midfielder,CM,31,Croatia,Croatia,Real Madrid CF,57M,340K,73,75,86,89,72,65
+15,G. Bale,89,89,Attacker,RW,27,Wales,Wales,Real Madrid CF,69.5M,370K,94,87,84,86,57,76
+16,S. Agüero,89,89,Attacker,ST,29,Argentina,Argentina,Manchester City,66.5M,325K,87,88,75,89,23,72
+17,G. Chiellini,89,89,Defender,CB,32,Italy,Italy,Juventus,38M,225K,74,46,56,58,90,85
+18,G. Buffon,89,89,Goalkeeper,GK,39,Italy,Italy,Juventus,4.5M,110K,89,88,74,84,46,90
+19,P. Dybala,88,93,Midfielder,CAM,23,Argentina,Argentina,Juventus,79M,215K,86,85,81,92,24,67
+20,J. Oblak,88,93,Goalkeeper,GK,24,Slovenia,Slovenia,Atlético Madrid,57M,82K,84,90,77,84,52,87
+21,A. Griezmann,88,91,Attacker,ST,26,France,France,Atlético Madrid,75M,150K,86,85,78,87,30,68
+22,Thiago,88,90,Midfielder,CM,26,Spain,Spain,FC Bayern Munich,70.5M,225K,72,75,85,90,62,63
+23,P. Aubameyang,88,88,Attacker,ST,28,Gabon,Gabon,Borussia Dortmund,61M,165K,96,84,75,81,37,71
+24,L. Bonucci,88,88,Defender,CB,30,Italy,Italy,Milan,44M,210K,68,54,70,69,87,81
+25,J. Boateng,88,88,Defender,CB,28,Germany,Germany,FC Bayern Munich,48M,215K,75,50,72,67,88,84
+26,D. Godín,88,88,Defender,CB,31,Uruguay,Uruguay,Atlético Madrid,40M,125K,65,48,65,62,88,78
+27,M. Hummels,88,88,Defender,CB,28,Germany,Germany,FC Bayern Munich,48M,215K,64,58,75,70,89,76
+28,M. Özil,88,88,Midfielder,CAM,28,Germany,Germany,Arsenal,60M,265K,71,74,87,86,24,58
+29,H. Lloris,88,88,Goalkeeper,GK,30,France,France,Tottenham Hotspur,38M,165K,88,86,68,90,64,82
+30,Thiago Silva,88,88,Defender,CB,32,Brazil,Brazil,Paris Saint-Germain,34M,175K,72,56,73,73,88,79
+31,Z. Ibrahimović,88,88,Attacker,ST,35,Sweden,Sweden,Manchester United,27M,240K,65,88,81,82,31,82
+32,A. Robben,88,88,Midfielder,RM,33,Netherlands,Netherlands,FC Bayern Munich,36M,225K,86,86,81,91,32,63
+33,N. Kanté,87,90,Midfielder,CDM,26,France,France,Chelsea,52.5M,190K,81,66,75,79,81,84
+34,M. Verratti,87,91,Midfielder,CM,24,Italy,Italy,Paris Saint-Germain,64.5M,130K,65,59,84,89,79,68
+35,P. Pogba,87,92,Midfielder,CM,24,France,France,Manchester United,66.5M,195K,74,79,84,85,68,88
+36,C. Eriksen,87,91,Midfielder,CAM,25,Denmark,Denmark,Tottenham Hotspur,65M,165K,75,78,88,84,47,63
+37,A. Vidal,87,87,Midfielder,CDM,30,Chile,Chile,FC Bayern Munich,37.5M,160K,75,81,80,78,83,84
+38,E. Cavani,87,87,Attacker,ST,30,Uruguay,Uruguay,Paris Saint-Germain,48.5M,160K,77,83,72,79,42,81
+39,Marcelo,87,87,Defender,LB,29,Brazil,Brazil,Real Madrid CF,38M,250K,78,69,80,85,82,79
+40,M. Hamšík,87,87,Midfielder,CM,29,Slovakia,Slovakia,Napoli,48.5M,130K,74,80,84,84,68,70
+41,I. Rakitić,87,87,Midfielder,CM,29,Croatia,Croatia,FC Barcelona,48.5M,275K,65,84,86,83,60,66
+42,David Silva,87,87,Midfielder,CAM,31,Spain,Spain,Manchester City,44M,220K,68,72,87,87,38,61
+43,S. Handanovič,87,87,Goalkeeper,GK,32,Slovenia,Slovenia,Inter,29M,91K,87,86,69,87,56,87
+44,Piqué,87,87,Defender,CB,30,Spain,Spain,FC Barcelona,37.5M,240K,65,61,69,65,86,76
+45,Iniesta,87,87,Midfielder,CM,33,Spain,Spain,FC Barcelona,29.5M,260K,71,70,87,90,58,58
+46,H. Kane,86,90,Attacker,ST,23,England,England,Tottenham Hotspur,59M,165K,71,87,72,78,42,83
+47,J. Rodríguez,86,89,Midfielder,CAM,25,Colombia,Colombia,FC Bayern Munich,56M,250K,76,85,85,83,40,68
+48,Isco,86,90,Midfielder,CM,25,Spain,Spain,Real Madrid CF,56.5M,250K,71,83,82,89,54,62
+49,D. Alaba,86,88,Defender,LB,25,Austria,Austria,FC Bayern Munich,44.5M,150K,86,73,81,80,82,74
+50,R. Lukaku,86,90,Attacker,ST,24,Belgium,Belgium,Manchester United,59M,210K,83,85,70,73,34,84
+51,Alex Sandro,86,88,Defender,LB,26,Brazil,Brazil,Juventus,44M,175K,86,65,77,81,81,84
+52,T. Müller,86,86,Attacker,CF,27,Germany,Germany,FC Bayern Munich,47.5M,190K,77,82,77,77,46,71
+53,Sergio Busquets,86,86,Midfielder,CDM,28,Spain,Spain,FC Barcelona,36M,250K,40,59,79,74,82,81
+54,Coutinho,86,89,Attacker,LW,25,Brazil,Brazil,Liverpool,56M,205K,82,78,83,89,35,64
+55,M. Reus,86,86,Midfielder,LM,28,Germany,Germany,Borussia Dortmund,45M,120K,88,87,84,85,39,64
+56,T. Alderweireld,86,87,Defender,CB,28,Belgium,Belgium,Tottenham Hotspur,40.5M,165K,66,58,72,64,87,80
+57,David Luiz,86,86,Defender,CB,30,Brazil,Brazil,Chelsea,33M,190K,70,64,74,71,84,81
+58,Diego Costa,86,86,Attacker,ST,28,Spain,Spain,Chelsea,46M,235K,75,83,65,76,40,88
+59,R. Nainggolan,86,86,Midfielder,CM,29,Belgium,Belgium,Roma,42.5M,130K,78,80,78,82,81,83
+60,Javi Martínez,86,86,Defender,CB,28,Spain,Spain,FC Bayern Munich,36M,165K,50,60,69,64,86,80
+61,D. Mertens,86,86,Attacker,CF,30,Belgium,Belgium,Napoli,43M,135K,90,82,79,89,36,55
+62,Sokratis,86,86,Defender,CB,29,Greece,Greece,Borussia Dortmund,34.5M,110K,78,52,55,59,87,84
+63,Miranda,86,86,Defender,CB,32,Brazil,Brazil,Inter,25.5M,115K,71,49,60,67,88,77
+64,K. Benzema,86,86,Attacker,ST,29,France,France,Real Madrid CF,44.5M,295K,78,84,77,82,22,74
+65,Cesc Fàbregas,86,86,Midfielder,CM,30,Spain,Spain,Chelsea,41M,210K,63,77,88,80,60,64
+66,F. Ribéry,86,86,Midfielder,LM,34,France,France,FC Bayern Munich,22.5M,175K,82,76,83,90,25,58
+67,Pepe,86,86,Defender,CB,34,Portugal,Portugal,Beşiktaş JK,13.5M,94K,68,50,57,59,86,80
+68,P. Čech,86,86,Goalkeeper,GK,35,Czech Republic,Czech Republic,Arsenal,10.5M,92K,82,87,76,81,42,83
+69,Y. Carrasco,85,90,Midfielder,LM,23,Belgium,Belgium,Atlético Madrid,51.5M,77K,88,79,78,88,29,63
+70,R. Varane,85,92,Defender,CB,24,France,France,Real Madrid CF,46.5M,175K,79,45,61,64,84,79
+71,Casemiro,85,89,Midfielder,CDM,25,Brazil,Brazil,Real Madrid CF,42M,195K,62,68,74,71,84,86
+72,L. Insigne,85,86,Attacker,LW,26,Italy,Italy,Napoli,45M,115K,90,74,82,90,25,50
+73,A. Lacazette,85,88,Attacker,ST,26,France,France,Arsenal,48.5M,180K,86,83,71,85,38,77
+74,K. Navas,85,85,Goalkeeper,GK,30,Costa Rica,Costa Rica,Real Madrid CF,24.5M,165K,87,82,72,85,53,80
+75,H. Mkhitaryan,85,85,Midfielder,RM,28,Armenia,Armenia,Manchester United,39M,195K,86,79,80,87,54,70
+76,D. Subašić,85,85,Goalkeeper,GK,32,Croatia,Croatia,AS Monaco,22M,46K,84,79,79,87,53,85
+77,B. Leno,85,88,Goalkeeper,GK,25,Germany,Germany,Bayer 04 Leverkusen,34M,61K,85,84,74,83,49,85
+78,M. ter Stegen,85,89,Goalkeeper,GK,25,Germany,Germany,FC Barcelona,35.5M,155K,84,83,87,86,45,81
+79,K. Glik,85,85,Defender,CB,29,Poland,Poland,AS Monaco,30M,60K,56,32,44,52,86,84
+80,Jordi Alba,85,85,Defender,LB,28,Spain,Spain,FC Barcelona,30.5M,215K,93,69,75,82,81,72
+81,I. Gündoğan,85,87,Midfielder,CM,26,Germany,Germany,Manchester City,46M,190K,71,74,83,87,64,71
+82,Azpilicueta,85,87,Defender,CB,27,Spain,Spain,Chelsea,37.5M,160K,79,55,74,73,86,78
+83,A. Di María,85,85,Attacker,RW,29,Argentina,Argentina,Paris Saint-Germain,37.5M,145K,86,77,82,86,47,68
+84,M. Pjanić,85,86,Midfielder,CM,27,Bosnia Herzegovina,Bosnia Herzegovina,Juventus,43.5M,160K,74,70,86,86,67,69
+85,C. Marchisio,85,85,Midfielder,CM,31,Italy,Italy,Juventus,33M,160K,78,72,83,84,76,74
+86,J. Vertonghen,85,85,Defender,CB,30,Belgium,Belgium,Tottenham Hotspur,28.5M,130K,67,65,73,69,85,81
+87,B. Matuidi,85,85,Midfielder,CDM,30,France,France,Juventus,28.5M,145K,78,67,77,75,82,84
+88,S. Ruffier,85,85,Goalkeeper,GK,30,France,France,AS Saint-Étienne,24.5M,49K,82,84,77,87,48,85
+89,Filipe Luís,85,85,Defender,LB,31,Brazil,Brazil,Atlético Madrid,25M,81K,79,62,77,77,82,79
+90,V. Kompany,85,85,Defender,CB,31,Belgium,Belgium,Manchester City,26M,170K,63,54,65,63,84,83
+91,A. Barzagli,85,85,Defender,CB,36,Italy,Italy,Juventus,5M,105K,71,34,57,63,88,73
+92,E. Bailly,84,89,Defender,CB,23,Ivory Coast,Ivory Coast,Manchester United,35.5M,150K,78,42,59,65,84,84
+93,Marco Asensio,84,92,Midfielder,CAM,21,Spain,Spain,Real Madrid CF,46M,175K,78,82,83,83,39,61
+94,Bernardo Silva,84,91,Midfielder,RM,22,Portugal,Portugal,Manchester City,43.5M,165K,81,72,81,90,45,61
+95,A. Laporte,84,89,Defender,CB,23,France,France,Athletic Club de Bilbao,35.5M,36K,69,50,66,60,86,78
+96,D. Alli,84,90,Midfielder,CAM,21,England,England,Tottenham Hotspur,43M,115K,76,81,77,82,64,78
+97,S. Mané,84,87,Attacker,RW,25,Senegal,Senegal,Liverpool,39M,175K,93,78,74,86,36,75
+98,Carvajal,84,87,Defender,RB,25,Spain,Spain,Real Madrid CF,32M,195K,82,45,73,79,82,78
+99,J. Draxler,84,87,Attacker,LW,23,Germany,Germany,Paris Saint-Germain,39.5M,120K,78,80,82,86,34,64
+100,M. Icardi,84,89,Attacker,ST,24,Argentina,Argentina,Inter,42M,105K,78,83,61,75,26,70
+101,Morata,84,88,Attacker,ST,24,Spain,Spain,Chelsea,41M,170K,82,80,71,80,23,73
+102,K. Koulibaly,84,87,Defender,CB,26,Senegal,Senegal,Napoli,32.5M,96K,73,26,43,55,85,86
+103,T. Horn,84,90,Goalkeeper,GK,24,Germany,Germany,1. FC Köln,31M,39K,83,81,83,86,48,82
+104,Koke,84,88,Midfielder,CM,25,Spain,Spain,Atlético Madrid,39.5M,84K,70,75,86,82,63,75
+105,K. Manolas,84,86,Defender,CB,26,Greece,Greece,Roma,31.5M,96K,80,19,42,60,86,83
+106,S. Mustafi,84,86,Defender,CB,25,Germany,Germany,Arsenal,31.5M,145K,67,57,63,61,83,79
+107,Ander Herrera,84,84,Midfielder,CM,27,Spain,Spain,Manchester United,32M,190K,73,72,81,83,78,77
+108,K. Strootman,84,85,Midfielder,CM,27,Netherlands,Netherlands,Roma,35M,105K,67,74,82,78,78,82
+109,Pedro,84,84,Attacker,RW,29,Spain,Spain,Chelsea,30.5M,200K,82,77,77,85,37,62
+110,R. Bürki,84,86,Goalkeeper,GK,26,Switzerland,Switzerland,Borussia Dortmund,26M,69K,84,82,73,85,48,80
+111,Bruno,84,84,Midfielder,CM,33,Spain,Spain,Villarreal CF,18.5M,59K,41,72,79,75,78,77
+112,I. Perišić,84,84,Midfielder,LM,28,Croatia,Croatia,Inter,31.5M,110K,84,80,78,82,42,75
+113,E. Džeko,84,84,Attacker,ST,31,Bosnia Herzegovina,Bosnia Herzegovina,Roma,28M,115K,64,83,70,74,32,72
+114,Willian,84,84,Attacker,RW,28,Brazil,Brazil,Chelsea,31.5M,200K,88,76,81,87,49,64
+115,S. Khedira,84,84,Midfielder,CM,30,Germany,Germany,Juventus,29M,160K,64,74,80,76,80,84
+116,R. Fährmann,84,85,Goalkeeper,GK,28,Germany,Germany,FC Schalke 04,25M,54K,83,86,52,87,43,85
+117,Sergio Asenjo,84,85,Goalkeeper,GK,28,Spain,Spain,Villarreal CF,25M,46K,86,83,76,85,56,82
+118,Juan Mata,84,84,Midfielder,CAM,29,Spain,Spain,Manchester United,30.5M,195K,67,76,84,84,32,54
+119,M. Benatia,84,84,Defender,CB,30,Morocco,Morocco,Juventus,23M,145K,74,42,54,63,85,82
+120,D. Payet,84,84,Attacker,LW,30,France,France,Olympique de Marseille,29.5M,60K,75,78,86,88,37,70
+121,Falcao,84,84,Attacker,ST,31,Colombia,Colombia,AS Monaco,28M,68K,69,84,68,78,36,74
+122,L. Koscielny,84,84,Defender,CB,31,France,France,Arsenal,21M,150K,75,41,62,64,85,78
+123,G. Cahill,84,84,Defender,CB,31,England,England,Chelsea,21M,160K,63,58,52,60,84,78
+124,Dani Alves,84,84,Defender,RB,34,Brazil,Brazil,Paris Saint-Germain,9M,115K,82,68,81,85,77,66
+125,A. Gómez,84,84,Attacker,CF,29,Argentina,Argentina,Atalanta,31M,60K,90,77,80,89,31,58
+126,Aduriz,84,84,Attacker,ST,36,Spain,Spain,Athletic Club de Bilbao,11M,38K,70,83,64,76,46,79
+127,K. Mbappé,83,94,Attacker,ST,18,France,France,Paris Saint-Germain,41.5M,31K,90,80,74,85,47,74
+128,O. Dembélé,83,92,Attacker,RW,20,France,France,FC Barcelona,40M,150K,91,76,75,89,32,56
+129,N. Keïta,83,88,Midfielder,CM,22,Guinea,Guinea,RB Leipzig,34M,68K,73,71,77,89,62,70
+130,J. Giménez,83,87,Defender,CB,22,Uruguay,Uruguay,Atlético Madrid,28.5M,53K,70,45,51,51,85,81
+131,G. Rulli,83,89,Goalkeeper,GK,25,Argentina,Argentina,Real Sociedad,25.5M,28K,85,79,75,86,51,82
+132,T. Lemar,83,91,Midfielder,LM,21,France,France,AS Monaco,38.5M,37K,85,78,80,87,62,70
+133,João Mário,83,88,Midfielder,CM,24,Portugal,Portugal,Inter,34M,70K,73,70,80,83,70,71
+134,N. Süle,83,89,Defender,CB,21,Germany,Germany,FC Bayern Munich,30.5M,78K,65,41,51,48,83,81
+135,Ederson,83,89,Goalkeeper,GK,23,Brazil,Brazil,Manchester City,26M,87K,81,76,82,87,63,78
+136,Fabinho,83,88,Midfielder,CDM,23,Brazil,Brazil,AS Monaco,29.5M,37K,74,65,76,76,83,83
+137,M. Salah,83,86,Attacker,RW,25,Egypt,Egypt,Liverpool,32.5M,135K,93,73,74,87,45,66
+138,A. Belotti,83,90,Attacker,ST,23,Italy,Italy,Torino,37M,58K,82,81,57,78,29,84
+139,E. Forsberg,83,85,Midfielder,CAM,25,Sweden,Sweden,RB Leipzig,31.5M,75K,75,74,83,83,29,66
+140,Marquinhos,83,89,Defender,CB,23,Brazil,Brazil,Paris Saint-Germain,30.5M,75K,71,38,68,69,84,76
+141,William Carvalho,83,86,Midfielder,CDM,25,Portugal,Portugal,Sporting CP,27.5M,21K,53,57,77,74,80,83
+142,S. Umtiti,83,88,Defender,CB,23,France,France,FC Barcelona,29.5M,135K,74,64,71,71,82,79
+143,R. Mahrez,83,84,Midfielder,RM,26,Algeria,Algeria,Leicester City,30.5M,88K,82,74,78,88,28,55
+144,V. van Dijk,83,86,Defender,CB,25,Netherlands,Netherlands,Southampton,27.5M,89K,73,60,67,69,83,85
+145,Roberto Firmino,83,87,Attacker,ST,25,Brazil,Brazil,Liverpool,34M,135K,77,81,79,86,46,77
+146,Danilo Pereira,83,86,Midfielder,CDM,25,Portugal,Portugal,FC Porto,27.5M,18K,68,62,69,74,82,87
+147,Vitolo,83,83,Midfielder,LM,27,Spain,Spain,UD Las Palmas,27M,68K,80,77,79,83,28,76
+148,A. Lopes,83,86,Goalkeeper,GK,26,Portugal,Portugal,Olympique Lyonnais,22.5M,60K,86,81,71,85,62,79
+149,S. de Vrij,83,88,Defender,CB,25,Netherlands,Netherlands,Lazio,29M,56K,68,41,58,64,85,76
+150,M. Perin,83,88,Goalkeeper,GK,24,Italy,Italy,Genoa,25M,28K,80,85,71,90,56,78
+151,J. Matip,83,85,Defender,CB,25,Cameroon,Cameroon,Liverpool,26.5M,110K,67,46,68,66,84,78
+152,I. Gueye,83,84,Midfielder,CDM,27,Senegal,Senegal,Everton,24.5M,115K,76,60,70,77,83,81
+153,Iago Aspas,83,83,Attacker,ST,29,Spain,Spain,RC Celta de Vigo,26M,39K,81,83,73,85,29,63
+154,N. Otamendi,83,83,Defender,CB,29,Argentina,Argentina,Manchester City,20M,140K,63,56,59,53,83,81
+155,N. Matić,83,83,Midfielder,CDM,28,Serbia,Serbia,Manchester United,21M,140K,64,70,76,72,80,87
+156,J. Pastore,83,83,Midfielder,CM,28,Argentina,Argentina,Paris Saint-Germain,25.5M,100K,71,75,83,85,58,64
+157,Parejo,83,83,Midfielder,CM,28,Spain,Spain,Valencia CF,25.5M,45K,52,77,87,79,61,69
+158,S. Kagawa,83,83,Midfielder,CAM,28,Japan,Japan,Borussia Dortmund,26M,75K,70,68,76,87,34,49
+159,G. Bonaventura,83,83,Midfielder,CM,27,Italy,Italy,Milan,26.5M,115K,78,77,82,83,67,73
+160,B. Dost,83,83,Attacker,ST,28,Netherlands,Netherlands,Sporting CP,27M,28K,60,83,57,63,43,83
+161,K. Walker,83,84,Defender,RB,27,England,England,Manchester City,24M,130K,90,63,73,76,80,81
+162,Oscar,83,86,Midfielder,CAM,25,Brazil,Brazil,,0,0,74,75,79,82,43,46
+163,S. N'Zonzi,83,83,Midfielder,CDM,28,France,France,Sevilla FC,21M,25K,57,67,73,71,80,88
+164,M. Musacchio,83,86,Defender,CB,26,Argentina,Argentina,Milan,27M,105K,70,51,66,57,84,78
+165,O. Toprak,83,84,Defender,CB,27,Turkey,Turkey,Borussia Dortmund,24.5M,66K,76,39,62,67,85,75
+166,José Callejón,83,83,Attacker,RW,30,Spain,Spain,Napoli,24.5M,87K,90,78,71,83,34,65
+167,Adrien Silva,83,83,Midfielder,CM,28,Portugal,Portugal,,0,0,65,76,82,81,78,72
+168,S. Giovinco,83,83,Attacker,CF,30,Italy,Italy,Toronto FC,25M,15K,84,81,79,87,27,57
+169,N. Gaitán,83,83,Midfielder,LM,29,Argentina,Argentina,Atlético Madrid,25.5M,70K,81,74,81,85,39,55
+170,M. Mandžukić,83,83,Attacker,ST,31,Croatia,Croatia,Juventus,23.5M,135K,72,78,71,73,65,87
+171,A. Lallana,83,83,Midfielder,CM,29,England,England,Liverpool,25M,135K,73,75,80,85,65,74
+172,B. Höwedes,83,83,Defender,CB,29,Germany,Germany,Juventus,20M,50K,64,47,63,63,83,77
+173,E. Banega,83,83,Midfielder,CAM,29,Argentina,Argentina,Sevilla FC,25.5M,27K,69,70,85,84,62,67
+174,Rui Patrício,83,83,Goalkeeper,GK,29,Portugal,Portugal,Sporting CP,17.5M,19K,85,81,80,82,55,79
+175,Y. Sommer,83,84,Goalkeeper,GK,28,Switzerland,Switzerland,Borussia Mönchengladbach,21M,39K,81,82,83,83,51,80
+176,M. Schneiderlin,83,85,Midfielder,CDM,27,France,France,Everton,25.5M,115K,68,62,76,77,79,81
+177,Jonas,83,83,Attacker,ST,33,Brazil,Brazil,SL Benfica,16.5M,21K,65,85,75,84,35,65
+178,K. Gameiro,83,83,Attacker,ST,30,France,France,Atlético Madrid,25M,73K,87,83,75,78,35,68
+179,L. Piszczek,83,83,Defender,RB,32,Poland,Poland,Borussia Dortmund,14.5M,66K,79,68,76,73,81,80
+180,E. Garay,83,83,Defender,CB,30,Argentina,Argentina,Valencia CF,19M,40K,43,64,66,64,84,80
+181,A. Valencia,83,83,Defender,RB,31,Ecuador,Ecuador,Manchester United,17M,130K,87,66,75,81,78,85
+182,K. Schmeichel,83,84,Goalkeeper,GK,30,Denmark,Denmark,Leicester City,19M,65K,83,82,82,86,61,80
+183,M. Dembélé,83,83,Midfielder,CM,29,Belgium,Belgium,Tottenham Hotspur,25M,115K,76,72,77,86,75,84
+184,Borja Valero,83,83,Midfielder,CAM,32,Spain,Spain,Inter,20M,80K,70,69,85,86,63,65
+185,L. Perrin,83,83,Defender,CB,31,France,France,AS Saint-Étienne,17.5M,46K,68,65,69,67,86,80
+186,L. Biglia,83,83,Midfielder,CDM,31,Argentina,Argentina,Milan,17.5M,105K,69,63,81,80,75,75
+187,Juanfran,83,83,Defender,RB,32,Spain,Spain,Atlético Madrid,14.5M,62K,82,58,75,77,80,77
+188,Diego López,83,83,Goalkeeper,GK,35,Spain,Spain,RCD Espanyol,6M,19K,77,84,76,80,44,83
+189,Santi Cazorla,83,83,Midfielder,CM,32,Spain,Spain,Arsenal,19.5M,130K,65,76,85,85,61,63
+190,J. Mascherano,83,83,Defender,CB,33,Argentina,Argentina,FC Barcelona,10.5M,155K,65,53,71,68,82,77
+191,W. Sneijder,83,83,Midfielder,CAM,33,Netherlands,Netherlands,OGC Nice,15.5M,47K,69,78,86,83,38,56
+192,Nani,83,83,Attacker,LW,30,Portugal,Portugal,Lazio,24.5M,47K,81,79,81,87,24,64
+193,D. De Rossi,83,83,Midfielder,CDM,33,Italy,Italy,Roma,10.5M,73K,68,64,73,70,81,82
+194,José Reina,83,83,Goalkeeper,GK,34,Spain,Spain,Napoli,10.5M,59K,80,83,82,82,57,82
+195,Quaresma,83,83,Midfielder,RM,33,Portugal,Portugal,Beşiktaş JK,15.5M,67K,83,76,81,88,18,60
+196,Y. Touré,83,83,Midfielder,CM,34,Ivory Coast,Ivory Coast,Manchester City,12.5M,145K,63,82,80,76,70,83
+197,Casillas,83,83,Goalkeeper,GK,36,Spain,Spain,FC Porto,3.5M,10K,86,74,58,85,58,80
+198,G. Donnarumma,82,94,Goalkeeper,GK,18,Italy,Italy,Milan,28.5M,35K,88,78,72,88,50,78
+199,L. Sané,82,91,Attacker,LW,21,Germany,Germany,Manchester City,34.5M,125K,94,77,72,86,34,70
+200,T. Bakayoko,82,88,Midfielder,CDM,22,France,France,Chelsea,26M,105K,73,49,70,74,81,83
+201,C. Tolisso,82,89,Midfielder,CM,22,France,France,FC Bayern Munich,30.5M,98K,74,76,78,78,76,83
+202,I. Slimani,82,82,Attacker,ST,29,Algeria,Algeria,Leicester City,22M,100K,69,78,67,72,47,86
+203,N. Fekir,82,85,Midfielder,CAM,23,France,France,Olympique Lyonnais,28M,70K,80,79,77,86,31,72
+204,J. Seri,82,83,Midfielder,CM,25,Ivory Coast,Ivory Coast,OGC Nice,26M,45K,80,71,82,82,72,74
+205,K. Baldé Diao,82,90,Attacker,LW,22,Senegal,Senegal,AS Monaco,32.5M,46K,92,76,72,87,29,70
+206,J. Tah,82,88,Defender,CB,21,Germany,Germany,Bayer 04 Leverkusen,26M,47K,72,27,58,57,82,78
+207,F. Bernardeschi,82,88,Midfielder,RM,23,Italy,Italy,Juventus,30.5M,110K,84,76,77,86,34,65
+208,T. Werner,82,87,Attacker,ST,21,Germany,Germany,RB Leipzig,30.5M,68K,91,79,65,81,28,65
+209,André Gomes,82,88,Midfielder,CM,23,Portugal,Portugal,FC Barcelona,30M,150K,68,71,78,78,71,81
+210,A. Martial,82,90,Midfielder,LM,21,France,France,Manchester United,33M,115K,90,79,71,86,41,74
+211,L. Goretzka,82,88,Midfielder,CM,22,Germany,Germany,FC Schalke 04,30M,46K,84,73,79,80,77,76
+212,Q. Promes,82,85,Midfielder,RM,25,Netherlands,Netherlands,Spartak Moscow,28M,76K,89,81,76,83,29,67
+213,Lucas Vázquez,82,83,Attacker,RW,26,Spain,Spain,Real Madrid CF,26M,185K,81,75,81,82,38,67
+214,Saúl,82,90,Midfielder,CM,22,Spain,Spain,Atlético Madrid,32M,59K,73,69,78,81,77,75
+215,Felipe,82,82,Defender,CB,28,Brazil,Brazil,FC Porto,18M,20K,68,41,59,60,83,81
+216,C. Bacca,82,82,Attacker,ST,30,Colombia,Colombia,Villarreal CF,21.5M,125K,77,79,64,79,24,70
+217,F. Vázquez,82,82,Midfielder,CAM,28,Italy,Italy,Sevilla FC,22.5M,27K,64,77,79,85,43,75
+218,M. Kovačić,82,88,Midfielder,CM,23,Croatia,Croatia,Real Madrid CF,30M,150K,81,69,82,86,61,69
+219,Sergio Rico,82,87,Goalkeeper,GK,23,Spain,Spain,Sevilla FC,21.5M,16K,79,80,78,83,52,82
+220,Manu Trigueros,82,85,Midfielder,CM,25,Spain,Spain,Villarreal CF,27.5M,43K,73,74,80,81,65,69
+221,A. Rüdiger,82,86,Defender,CB,24,Germany,Germany,Chelsea,24.5M,105K,74,40,64,62,81,79
+222,F. Thauvin,82,85,Attacker,RW,24,France,France,Olympique de Marseille,28M,40K,82,76,78,84,36,63
+223,S. Savić,82,86,Defender,CB,26,Montenegro,Montenegro,Atlético Madrid,24M,62K,63,35,52,55,83,74
+224,Iñigo Martínez,82,86,Defender,CB,26,Spain,Spain,Real Sociedad,24M,37K,71,56,63,61,82,79
+225,Roque Mesa,82,82,Midfielder,CDM,28,Spain,Spain,Swansea City,18M,85K,77,61,76,77,73,80
+226,A. Florenzi,82,84,Defender,RB,26,Italy,Italy,Roma,22M,73K,85,79,78,82,76,76
+227,D. Klaassen,82,85,Midfielder,CM,24,Netherlands,Netherlands,Everton,27.5M,110K,73,80,74,74,67,79
+228,K. Bellarabi,82,82,Midfielder,RM,27,Germany,Germany,Bayer 04 Leverkusen,23M,67K,92,77,74,85,33,68
+229,R. Sterling,82,87,Attacker,RW,22,England,England,Manchester City,29.5M,140K,93,71,74,86,46,61
+230,Suso,82,87,Attacker,RW,23,Spain,Spain,Milan,29.5M,110K,82,74,81,88,23,51
+231,Deulofeu,82,89,Attacker,LW,23,Spain,Spain,FC Barcelona,31M,165K,93,70,75,88,26,61
+232,E. Dier,82,87,Defender,CB,23,England,England,Tottenham Hotspur,25M,85K,72,63,71,65,81,85
+233,M. Rojo,82,83,Defender,CB,27,Argentina,Argentina,Manchester United,21M,130K,71,59,69,68,80,83
+234,Lucas,82,85,Attacker,RW,24,Brazil,Brazil,Paris Saint-Germain,28M,92K,93,74,75,86,45,62
+235,H. Son,82,85,Midfielder,LM,24,Korea Republic,Korea Republic,Tottenham Hotspur,28M,95K,86,83,75,83,25,66
+236,F. Acerbi,82,82,Defender,CB,29,Italy,Italy,Sassuolo,17M,68K,62,50,58,57,85,77
+237,G. Xhaka,82,85,Midfielder,CM,24,Switzerland,Switzerland,Arsenal,27.5M,110K,50,66,79,71,72,78
+238,Jonathan Viera,82,82,Midfielder,CM,27,Spain,Spain,UD Las Palmas,23M,31K,80,75,81,86,52,68
+239,Pizzi,82,82,Midfielder,CM,27,Portugal,Portugal,SL Benfica,23M,19K,79,77,81,83,61,69
+240,Willian José,82,86,Attacker,ST,25,Brazil,Brazil,Real Sociedad,29M,42K,67,82,65,76,37,77
+241,O. Baumann,82,84,Goalkeeper,GK,27,Germany,Germany,TSG 1899 Hoffenheim,18M,37K,82,82,64,84,49,81
+242,G. Medel,82,82,Midfielder,CDM,29,Chile,Chile,Beşiktaş JK,17M,64K,74,48,68,70,81,81
+243,Víctor Ruíz,82,83,Defender,CB,28,Spain,Spain,Villarreal CF,20M,43K,58,42,64,60,83,81
+244,X. Shaqiri,82,85,Midfielder,RM,25,Switzerland,Switzerland,Stoke City,28M,85K,83,77,78,85,46,65
+245,J. Cuadrado,82,82,Midfielder,RM,29,Colombia,Colombia,Juventus,21.5M,130K,91,74,75,87,61,65
+246,C. Immobile,82,83,Attacker,ST,27,Italy,Italy,Lazio,26M,70K,81,83,61,77,38,74
+247,Douglas Costa,82,82,Midfielder,LM,26,Brazil,Brazil,Juventus,24M,115K,92,77,77,85,32,64
+248,N. Clyne,82,84,Defender,RB,26,England,England,Liverpool,22M,115K,83,61,71,77,80,76
+249,Iborra,82,82,Midfielder,CDM,29,Spain,Spain,Leicester City,17M,85K,50,73,73,69,83,83
+250,K. Trapp,82,84,Goalkeeper,GK,26,Germany,Germany,Paris Saint-Germain,18.5M,71K,80,78,79,84,49,84
+251,V. Wanyama,82,85,Midfielder,CDM,26,Kenya,Kenya,Tottenham Hotspur,23M,99K,64,66,70,74,82,91
+252,Taison,82,82,Midfielder,LM,29,Brazil,Brazil,Shakhtar Donetsk,21.5M,1K,92,79,75,86,47,63
+253,Marlos,82,82,Midfielder,RM,29,Brazil,Brazil,Shakhtar Donetsk,21.5M,1K,83,76,78,88,48,66
+254,L. Stindl,82,82,Attacker,CF,28,Germany,Germany,Borussia Mönchengladbach,23M,56K,71,84,79,79,64,74
+255,M. Balotelli,82,82,Attacker,ST,26,Italy,Italy,OGC Nice,24.5M,51K,80,82,70,80,26,77
+256,A. Ramsey,82,83,Midfielder,CM,26,Wales,Wales,Arsenal,25.5M,130K,68,75,79,81,65,75
+257,W. Szczęsny,82,84,Goalkeeper,GK,27,Poland,Poland,Juventus,18M,90K,83,77,74,87,49,78
+258,G. Sigurðsson,82,82,Midfielder,CAM,27,Iceland,Iceland,Everton,23M,130K,66,81,84,79,52,70
+259,Y. Brahimi,82,82,Midfielder,LM,27,Algeria,Algeria,FC Porto,23M,21K,80,73,76,89,33,56
+260,M. Arnautović,82,82,Midfielder,LM,28,Austria,Austria,West Ham United,22.5M,125K,77,74,79,82,53,81
+261,J. Henderson,82,84,Midfielder,CDM,27,England,England,Liverpool,21.5M,115K,72,70,82,76,76,81
+262,M. Kruse,82,82,Attacker,CF,29,Germany,Germany,SV Werder Bremen,22M,47K,71,84,82,82,39,69
+263,O. Karnezis,82,82,Goalkeeper,GK,31,Greece,Greece,Watford,13.5M,30K,80,83,70,84,38,80
+264,L. Fejsa,82,82,Midfielder,CDM,28,Serbia,Serbia,SL Benfica,18M,18K,53,57,66,67,81,85
+265,F. Muslera,82,82,Goalkeeper,GK,31,Uruguay,Uruguay,Galatasaray SK,13.5M,57K,81,75,75,85,61,83
+266,V. Ćorluka,82,82,Defender,CB,31,Croatia,Croatia,Lokomotiv Moscow,15M,54K,58,51,67,66,82,82
+267,G. Wijnaldum,82,85,Midfielder,CM,26,Netherlands,Netherlands,Liverpool,27M,130K,81,75,76,84,66,74
+268,F. Fazio,82,82,Defender,CB,30,Argentina,Argentina,Roma,16.5M,73K,30,41,54,54,84,81
+269,O. Giroud,82,82,Attacker,ST,30,France,France,Arsenal,21.5M,140K,53,81,70,73,38,83
+270,B. Ivanović,82,82,Defender,CB,33,Serbia,Serbia,Zenit St. Petersburg,9M,73K,62,61,68,60,82,83
+271,J. Hernández,82,82,Attacker,ST,29,Mexico,Mexico,West Ham United,22M,135K,79,80,66,78,31,59
+272,Beñat,82,82,Midfielder,CM,30,Spain,Spain,Athletic Club de Bilbao,20.5M,35K,58,75,84,75,66,74
+273,L. Bender,82,83,Midfielder,CDM,28,Germany,Germany,Bayer 04 Leverkusen,20M,64K,68,64,73,72,82,79
+274,A. Witsel,82,82,Midfielder,CM,28,Belgium,Belgium,,0,0,71,73,77,82,73,80
+275,C. Bravo,82,82,Goalkeeper,GK,34,Chile,Chile,Manchester City,9M,110K,80,80,87,81,56,77
+276,A. Begović,82,82,Goalkeeper,GK,30,Bosnia Herzegovina,Bosnia Herzegovina,Bournemouth,14M,64K,81,81,73,82,55,79
+277,Naldo,82,82,Defender,CB,34,Brazil,Brazil,FC Schalke 04,6.5M,48K,69,69,63,61,84,73
+278,D. Sturridge,82,82,Attacker,ST,27,England,England,Liverpool,23.5M,140K,76,82,69,79,25,68
+279,D. Rose,82,83,Defender,LB,26,England,England,Tottenham Hotspur,21M,99K,81,63,73,77,81,78
+280,C. Vela,82,82,Attacker,RW,28,Mexico,Mexico,Real Sociedad,22.5M,46K,84,79,77,82,25,66
+281,E. Viviano,82,82,Goalkeeper,GK,31,Italy,Italy,Sampdoria,13.5M,37K,81,84,79,83,32,78
+282,G. Castro,82,82,Midfielder,CM,30,Germany,Germany,Borussia Dortmund,20.5M,72K,71,72,83,81,72,68
+283,S. Nasri,82,82,Midfielder,LM,30,France,France,Antalyaspor,21M,29K,78,76,81,84,38,59
+284,A. Williams,82,82,Defender,CB,32,Wales,Wales,Everton,12.5M,115K,65,43,56,60,81,81
+285,S. Mandanda,82,82,Goalkeeper,GK,32,France,France,Olympique de Marseille,12.5M,31K,86,78,77,85,48,77
+286,L. Baines,82,82,Defender,LB,32,England,England,Everton,12.5M,115K,70,71,80,79,80,71
+287,A. Consigli,82,82,Goalkeeper,GK,30,Italy,Italy,Sassuolo,14M,52K,82,83,72,84,40,81
+288,João Moutinho,82,82,Midfielder,CM,30,Portugal,Portugal,AS Monaco,20.5M,48K,69,75,81,81,70,72
+289,B. Costil,82,82,Goalkeeper,GK,29,France,France,Girondins de Bordeaux,15M,46K,82,80,78,84,51,82
+290,Raúl Albiol,82,82,Defender,CB,31,Spain,Spain,Napoli,15M,73K,57,41,57,59,84,76
+291,J. Hart,82,82,Goalkeeper,GK,30,England,England,West Ham United,14M,110K,83,78,75,83,60,81
+292,M. Gómez,82,82,Attacker,ST,31,Germany,Germany,VfL Wolfsburg,20M,85K,72,82,62,72,28,78
+293,Raffael,82,82,Attacker,CF,32,Brazil,Brazil,Borussia Mönchengladbach,17.5M,54K,72,79,80,87,41,67
+294,A. Turan,82,82,Midfielder,CM,30,Turkey,Turkey,FC Barcelona,20.5M,170K,71,73,81,85,61,72
+295,Fernandinho,82,82,Midfielder,CDM,32,Brazil,Brazil,Manchester City,12.5M,130K,73,73,76,77,77,78
+296,David Villa,82,82,Attacker,ST,35,Spain,Spain,New York City Football Club,10M,12K,69,83,74,82,31,69
+297,S. Lichtsteiner,82,82,Defender,RB,33,Switzerland,Switzerland,Juventus,8.5M,115K,77,59,73,76,80,77
+298,R. Jarstein,82,82,Goalkeeper,GK,32,Norway,Norway,Hertha BSC Berlin,12.5M,30K,78,81,72,85,43,87
+299,Gabriel Jesus,81,92,Attacker,ST,20,Brazil,Brazil,Manchester City,31M,115K,87,79,71,87,26,67
+300,Nélson Semedo,81,87,Defender,RB,23,Portugal,Portugal,FC Barcelona,20.5M,125K,92,57,68,80,76,71
+301,Gelson Martins,81,88,Midfielder,RM,22,Portugal,Portugal,Sporting CP,25M,20K,94,70,73,86,44,60
+302,Malcom,81,87,Attacker,RW,20,Brazil,Brazil,Girondins de Bordeaux,24.5M,47K,83,76,78,85,26,63
+303,J. Weigl,81,87,Midfielder,CDM,21,Germany,Germany,Borussia Dortmund,21M,46K,70,49,76,76,76,68
+304,D. Sánchez,81,88,Defender,CB,21,Colombia,Colombia,Tottenham Hotspur,21.5M,70K,71,47,50,58,81,83
+305,A. Kramarić,81,83,Attacker,ST,26,Croatia,Croatia,TSG 1899 Hoffenheim,22M,50K,73,81,70,84,26,71
+306,M. Brozović,81,85,Midfielder,CM,24,Croatia,Croatia,Inter,23M,64K,73,73,79,81,68,69
+307,Williams,81,87,Attacker,RW,23,Spain,Spain,Athletic Club de Bilbao,24.5M,31K,93,78,73,79,34,79
+308,Dani García,81,82,Midfielder,CDM,27,Spain,Spain,SD Eibar,17M,26K,48,58,74,72,73,80
+309,A. Christensen,81,89,Defender,CB,21,Denmark,Denmark,Chelsea,23M,86K,72,31,62,68,84,70
+310,J. Kimmich,81,87,Defender,RB,22,Germany,Germany,FC Bayern Munich,20.5M,81K,70,67,82,80,77,72
+311,Bruma,81,86,Midfielder,LM,22,Portugal,Portugal,RB Leipzig,24M,63K,93,71,73,86,34,65
+312,D. Berardi,81,87,Attacker,RW,22,Italy,Italy,Sassuolo,24.5M,62K,85,80,75,84,30,72
+313,M. Sanson,81,87,Midfielder,CM,22,France,France,Olympique de Marseille,24M,34K,76,75,80,80,74,77
+314,A. Rabiot,81,86,Midfielder,CM,22,France,France,Paris Saint-Germain,23.5M,77K,70,72,78,78,73,77
+315,R. Guerreiro,81,86,Midfielder,LM,23,Portugal,Portugal,Borussia Dortmund,24M,58K,77,75,81,84,74,63
+316,J. Vardy,81,81,Attacker,ST,30,England,England,Leicester City,17M,89K,91,79,63,76,51,78
+317,H. Ziyech,81,85,Midfielder,CM,24,Morocco,Morocco,Ajax,23M,16K,76,74,86,78,52,64
+318,M. Keane,81,87,Defender,CB,24,England,England,Everton,21M,91K,72,49,64,67,82,82
+319,Jorginho,81,84,Midfielder,CM,25,Italy,Italy,Napoli,22M,71K,75,64,80,80,70,68
+320,Héctor Bellerín,81,88,Defender,RB,22,Spain,Spain,Arsenal,21M,91K,95,51,69,78,75,70
+321,J. Butland,81,87,Goalkeeper,GK,24,England,England,Stoke City,18M,50K,81,83,72,85,41,78
+322,S. Zaza,81,82,Attacker,ST,26,Italy,Italy,Valencia CF,21M,44K,79,80,59,77,38,83
+323,T. Meunier,81,84,Defender,RB,25,Belgium,Belgium,Paris Saint-Germain,18.5M,77K,76,74,75,77,78,84
+324,Felipe Anderson,81,86,Attacker,RW,24,Brazil,Brazil,Lazio,24M,57K,92,75,77,87,53,62
+325,Rafinha,81,86,Midfielder,CM,24,Brazil,Brazil,FC Barcelona,23.5M,140K,74,76,79,85,62,64
+326,Nacho Fernández,81,83,Defender,CB,27,Spain,Spain,Real Madrid CF,17.5M,145K,76,37,65,63,81,78
+327,J. Cillessen,81,83,Goalkeeper,GK,28,Netherlands,Netherlands,FC Barcelona,15M,125K,79,83,74,77,52,81
+328,Sergi Roberto,81,86,Defender,RB,25,Spain,Spain,FC Barcelona,19.5M,140K,77,64,80,76,79,72
+329,W. Ben Yedder,81,82,Attacker,ST,26,France,France,Sevilla FC,21M,26K,83,79,75,85,34,63
+330,Lucas Pérez,81,81,Attacker,ST,28,Spain,Spain,RC Deportivo de La Coruña,18.5M,135K,81,82,76,80,31,71
+331,R. Barkley,81,86,Midfielder,CAM,23,England,England,Everton,24M,105K,77,73,77,83,55,77
+332,C. Bakambu,81,84,Attacker,ST,26,DR Congo,DR Congo,Villarreal CF,22.5M,45K,87,78,72,80,35,74
+333,W. Zaha,81,84,Midfielder,RM,24,Ivory Coast,Ivory Coast,Crystal Palace,22.5M,60K,90,71,71,87,33,72
+334,Bartra,81,83,Defender,CB,26,Spain,Spain,Borussia Dortmund,18M,61K,77,52,70,73,82,71
+335,S. Aurier,81,85,Defender,RB,24,Ivory Coast,Ivory Coast,Tottenham Hotspur,19M,79K,84,66,73,76,78,84
+336,S. Coates,81,83,Defender,CB,26,Uruguay,Uruguay,Sporting CP,18M,21K,58,40,53,59,80,86
+337,G. Krychowiak,81,83,Midfielder,CDM,27,Poland,Poland,West Bromwich Albion,17.5M,81K,65,58,72,66,79,86
+338,K. Kampl,81,83,Midfielder,CM,26,Slovenia,Slovenia,RB Leipzig,21M,73K,80,68,77,84,58,62
+339,D. Lovren,81,83,Defender,CB,27,Croatia,Croatia,Liverpool,17.5M,110K,56,40,59,62,81,82
+340,A. Yarmolenko,81,81,Attacker,RW,27,Ukraine,Ukraine,Borussia Dortmund,18.5M,72K,81,78,80,83,37,76
+341,Y. Belhanda,81,81,Midfielder,CAM,27,Morocco,Morocco,Galatasaray SK,18.5M,71K,75,77,79,85,56,70
+342,Mário Fernandes,81,82,Defender,RWB,26,Russia,Russia,CSKA Moscow,17M,52K,84,62,73,76,80,77
+343,R. Rodríguez,81,84,Defender,LB,24,Switzerland,Switzerland,Milan,18.5M,83K,74,67,80,76,77,72
+344,J. Corona,81,85,Midfielder,RM,24,Mexico,Mexico,FC Porto,23M,17K,83,72,74,88,40,51
+345,Mario Gaspar,81,84,Defender,RB,26,Spain,Spain,Villarreal CF,18M,38K,81,70,70,73,80,81
+346,Marcos Alonso,81,83,Defender,LWB,26,Spain,Spain,Chelsea,17.5M,115K,77,69,76,76,77,80
+347,M. Götze,81,85,Midfielder,CM,25,Germany,Germany,Borussia Dortmund,22.5M,63K,68,72,81,88,38,62
+348,L. Hrádecký,81,83,Goalkeeper,GK,27,Finland,Finland,Eintracht Frankfurt,14.5M,28K,79,77,73,85,41,79
+349,Illarramendi,81,81,Midfielder,CM,27,Spain,Spain,Real Sociedad,18M,37K,60,66,77,78,77,70
+350,De Marcos,81,81,Defender,RB,28,Spain,Spain,Athletic Club de Bilbao,14M,31K,86,62,73,78,74,79
+351,C. Smalling,81,82,Defender,CB,27,England,England,Manchester United,17M,120K,72,46,56,58,81,83
+352,Iturraspe,81,81,Midfielder,CM,28,Spain,Spain,Athletic Club de Bilbao,17.5M,33K,59,63,77,70,79,72
+353,J. Wilshere,81,84,Midfielder,CM,25,England,England,Arsenal,22M,115K,71,69,80,83,62,72
+354,S. Rudy,81,82,Midfielder,CM,27,Germany,Germany,FC Bayern Munich,20M,105K,71,67,80,80,74,67
+355,M. Lanzini,81,87,Midfielder,CAM,24,Argentina,Argentina,West Ham United,24.5M,95K,82,71,78,87,28,55
+356,R. Boudebouz,81,82,Midfielder,CAM,27,Algeria,Algeria,Real Betis Balompié,20.5M,32K,76,78,82,82,32,62
+357,Camacho,81,84,Midfielder,CDM,27,Spain,Spain,VfL Wolfsburg,18M,66K,61,60,71,68,80,81
+358,Paulinho,81,81,Midfielder,CM,28,Brazil,Brazil,FC Barcelona,17.5M,165K,76,74,74,77,77,76
+359,N. Kalinić,81,81,Attacker,ST,29,Croatia,Croatia,Milan,18M,84K,73,79,64,74,35,76
+360,Giuliano,81,82,Midfielder,CAM,27,Brazil,Brazil,Fenerbahçe SK,20.5M,80K,81,76,77,82,45,73
+361,C. Benteke,81,83,Attacker,ST,26,Belgium,Belgium,Crystal Palace,22M,75K,73,79,65,74,33,80
+362,D. Perotti,81,81,Attacker,LW,28,Argentina,Argentina,Roma,18M,84K,81,71,78,85,32,59
+363,M. Parolo,81,81,Midfielder,CM,32,Italy,Italy,Lazio,13.5M,60K,71,76,76,75,77,81
+364,K. Mitroglou,81,81,Attacker,ST,29,Greece,Greece,Olympique de Marseille,18M,44K,58,81,64,72,19,83
+365,M. Sakho,81,82,Defender,CB,27,France,France,Crystal Palace,17M,63K,61,33,62,55,80,85
+366,A. Rami,81,81,Defender,CB,31,France,France,Olympique de Marseille,12M,35K,53,54,48,57,81,82
+367,S. Jovetić,81,82,Attacker,ST,27,Montenegro,Montenegro,AS Monaco,21M,48K,77,81,75,85,34,66
+368,S. Coleman,81,81,Defender,RB,28,Republic of Ireland,Republic of Ireland,Everton,14M,115K,73,66,72,78,80,77
+369,S. Kjær,81,82,Defender,CB,28,Denmark,Denmark,Sevilla FC,16M,23K,64,55,64,52,81,80
+370,Adán,81,81,Goalkeeper,GK,30,Spain,Spain,Real Betis Balompié,11.5M,24K,80,83,72,82,55,81
+371,M. Valbuena,81,81,Attacker,LW,32,France,France,Fenerbahçe SK,14M,86K,80,74,79,84,29,49
+372,S. Mignolet,81,81,Goalkeeper,GK,29,Belgium,Belgium,Liverpool,12M,91K,80,76,65,84,56,78
+373,D. Astori,81,81,Defender,CB,30,Italy,Italy,Fiorentina,13M,68K,68,36,52,59,84,77
+374,K. Mirallas,81,81,Midfielder,LM,29,Belgium,Belgium,Everton,17.5M,125K,83,77,77,84,46,65
+375,Raúl García,81,81,Midfielder,CAM,30,Spain,Spain,Athletic Club de Bilbao,17M,32K,57,76,82,76,66,76
+376,M. Škrtel,81,81,Defender,CB,32,Slovakia,Slovakia,Fenerbahçe SK,10M,73K,61,38,51,51,82,81
+377,T. Heaton,81,81,Goalkeeper,GK,31,England,England,Burnley,11M,51K,80,79,76,83,54,80
+378,H. Ben Arfa,81,81,Midfielder,CAM,30,France,France,Paris Saint-Germain,17M,88K,76,77,77,86,35,69
+379,Dante,81,81,Defender,CB,33,Brazil,Brazil,OGC Nice,7M,39K,45,52,67,63,82,74
+380,A. Gignac,81,81,Attacker,ST,31,France,France,Tigres U.A.N.L.,16M,84K,72,83,72,73,39,82
+381,Gabi,81,81,Midfielder,CM,33,Spain,Spain,Atlético Madrid,10.5M,62K,64,72,79,76,75,73
+382,G. Rodríguez,81,81,Defender,CB,33,Argentina,Argentina,San Lorenzo de Almagro,7M,27K,68,47,61,65,83,76
+383,D. Srna,81,81,Defender,RB,35,Croatia,Croatia,Shakhtar Donetsk,3.8M,1K,73,75,85,75,78,74
+384,B. Schweinsteiger,81,81,Midfielder,CM,32,Germany,Germany,Chicago Fire Soccer Club,13.5M,13K,39,75,81,73,74,74
+385,C. Carrasso,81,81,Goalkeeper,GK,35,France,France,Galatasaray SK,4.2M,34K,78,79,81,81,40,79
+386,Moyá,81,81,Goalkeeper,GK,33,Spain,Spain,Atlético Madrid,9M,46K,85,78,82,79,39,81
+387,W. Rooney,81,81,Midfielder,CAM,31,England,England,Everton,15.5M,120K,68,81,80,75,52,81
+388,P. Mertesacker,81,81,Defender,CB,32,Germany,Germany,Arsenal,10M,110K,27,41,55,46,85,70
+389,T. Motta,81,81,Midfielder,CDM,34,Italy,Italy,Paris Saint-Germain,5.5M,81K,32,64,76,68,76,82
+390,Fernando Torres,81,81,Attacker,ST,33,Spain,Spain,Atlético Madrid,11M,68K,76,78,71,79,25,69
+391,S. Eto'o,81,81,Attacker,ST,36,Cameroon,Cameroon,Antalyaspor,6.5M,22K,74,83,74,79,36,71
+392,M. Rashford,80,89,Midfielder,LM,19,England,England,Manchester United,22M,74K,92,76,72,82,34,74
+393,S. Milinković-Savić,80,86,Midfielder,CM,22,Serbia,Serbia,Lazio,20M,52K,71,71,73,79,73,83
+394,Y. Tielemans,80,90,Midfielder,CM,20,Belgium,Belgium,AS Monaco,23.5M,35K,53,79,80,77,68,71
+395,Jemerson,80,86,Defender,CB,24,Brazil,Brazil,AS Monaco,17.5M,35K,63,35,51,58,81,75
+396,N. Bentaleb,80,85,Midfielder,CM,22,Algeria,Algeria,FC Schalke 04,19.5M,42K,67,71,77,82,70,72
+397,Alisson,80,84,Goalkeeper,GK,24,Brazil,Brazil,Roma,14M,45K,75,76,70,86,39,78
+398,Alex Telles,80,84,Defender,LB,24,Brazil,Brazil,FC Porto,16M,15K,83,62,77,78,75,74
+399,J. Brandt,80,88,Midfielder,LM,21,Germany,Germany,Bayer 04 Leverkusen,22M,49K,81,73,76,84,26,61
+400,K. Demirbay,80,84,Midfielder,CAM,23,Germany,Germany,TSG 1899 Hoffenheim,19.5M,40K,68,73,79,82,53,71
+401,D. Rugani,80,88,Defender,CB,22,Italy,Italy,Juventus,19M,88K,61,39,53,63,83,75
+402,Samu Castillejo,80,85,Midfielder,RM,22,Spain,Spain,Villarreal CF,20M,36K,86,67,79,82,37,48
+403,P. Zieliński,80,87,Midfielder,CM,23,Poland,Poland,Napoli,20.5M,64K,83,69,79,83,62,60
+404,Ricardo Pereira,80,86,Defender,RB,23,Portugal,Portugal,FC Porto,17M,15K,88,62,77,81,77,70
+405,Grimaldo,80,87,Defender,LB,21,Spain,Spain,SL Benfica,17.5M,12K,86,59,72,82,75,72
+406,Fred,80,85,Midfielder,CM,24,Brazil,Brazil,Shakhtar Donetsk,19.5M,1K,82,70,76,82,71,63
+407,J. Hector,80,81,Midfielder,CDM,27,Germany,Germany,1. FC Köln,14M,42K,77,60,76,75,79,77
+408,E. Can,80,85,Midfielder,CM,23,Germany,Germany,Liverpool,19.5M,105K,71,67,77,77,78,84
+409,S. Kolašinac,80,83,Defender,LB,24,Bosnia Herzegovina,Bosnia Herzegovina,Arsenal,15.5M,91K,78,53,61,64,78,89
+410,Arrizabalaga,80,87,Goalkeeper,GK,22,Spain,Spain,Athletic Club de Bilbao,15.5M,20K,78,81,75,83,33,76
+411,A. Pléa,80,86,Attacker,ST,24,France,France,OGC Nice,20.5M,41K,82,80,75,77,41,76
+412,T. Stepanenko,80,81,Midfielder,CDM,27,Ukraine,Ukraine,Shakhtar Donetsk,14M,1K,67,61,72,69,79,80
+413,O. Shatov,80,80,Midfielder,LM,26,Russia,Russia,Zenit St. Petersburg,16M,74K,88,73,76,82,47,68
+414,Leo Baptistao,80,83,Attacker,ST,24,Brazil,Brazil,RCD Espanyol,19M,36K,79,77,69,79,28,64
+415,M. Nastasić,80,84,Defender,CB,24,Serbia,Serbia,FC Schalke 04,16.5M,38K,70,31,58,49,82,75
+416,Denis Suárez,80,87,Midfielder,CM,23,Spain,Spain,FC Barcelona,20.5M,140K,79,74,81,84,51,58
+417,M. Batshuayi,80,85,Attacker,ST,23,Belgium,Belgium,Chelsea,20M,120K,79,80,59,77,27,74
+418,J. Brooks,80,85,Defender,CB,24,United States,United States,VfL Wolfsburg,17M,57K,74,39,57,63,81,77
+419,Eric Botteghin,80,80,Defender,CB,29,Brazil,Brazil,Feyenoord,11.5M,22K,34,36,48,48,82,83
+420,L. Karius,80,84,Goalkeeper,GK,24,Germany,Germany,Liverpool,14M,71K,84,74,74,85,50,76
+421,T. Hazard,80,84,Attacker,CF,24,Belgium,Belgium,Borussia Mönchengladbach,19.5M,44K,81,78,80,85,37,64
+422,V. Germain,80,80,Attacker,ST,27,France,France,Olympique de Marseille,16M,42K,78,80,75,79,31,68
+423,L. Kurzawa,80,85,Defender,LB,24,France,France,Paris Saint-Germain,16.5M,69K,77,69,77,78,77,75
+424,J. Iličić,80,80,Attacker,CF,29,Slovenia,Slovenia,Atalanta,15M,42K,70,82,80,82,35,64
+425,K. Volland,80,83,Attacker,ST,24,Germany,Germany,Bayer 04 Leverkusen,19M,59K,77,81,78,79,39,82
+426,Allan,80,82,Midfielder,CM,26,Brazil,Brazil,Napoli,17.5M,74K,77,64,75,78,79,81
+427,P. Hernández,80,80,Midfielder,CM,30,Chile,Chile,RC Celta de Vigo,13.5M,32K,71,71,75,78,64,79
+428,D. Tadić,80,80,Midfielder,CAM,28,Serbia,Serbia,Southampton,15M,98K,70,67,80,83,37,63
+429,L. Muriel,80,83,Attacker,ST,26,Colombia,Colombia,Sevilla FC,18.5M,26K,89,77,68,85,24,72
+430,Pablo Sarabia,80,83,Midfielder,RM,25,Spain,Spain,Sevilla FC,18.5M,23K,76,73,80,84,30,53
+431,A. Oxlade-Chamberlain,80,85,Midfielder,RM,23,England,England,Liverpool,20M,105K,88,70,74,84,52,70
+432,J. Guilavogui,80,82,Midfielder,CDM,26,France,France,VfL Wolfsburg,15M,66K,70,59,66,67,81,81
+433,O. Özyakup,80,85,Midfielder,CM,24,Turkey,Turkey,Beşiktaş JK,19.5M,54K,75,74,83,81,59,69
+434,Y. Rakitskyi,80,82,Defender,CB,27,Ukraine,Ukraine,Shakhtar Donetsk,14.5M,1K,72,68,76,72,81,78
+435,Sergi Enrich,80,81,Attacker,ST,27,Spain,Spain,SD Eibar,17.5M,31K,66,77,69,75,42,79
+436,Neto,80,80,Goalkeeper,GK,27,Brazil,Brazil,Valencia CF,10M,30K,84,80,74,83,51,74
+437,Hugo Mallo,80,83,Defender,RB,26,Spain,Spain,RC Celta de Vigo,15M,29K,74,40,70,74,77,76
+438,D. Didavi,80,81,Midfielder,CAM,27,Germany,Germany,VfL Wolfsburg,17M,73K,77,81,76,81,52,72
+439,R. Soriano,80,81,Midfielder,LM,26,Italy,Italy,Villarreal CF,17.5M,42K,77,77,80,81,63,73
+440,A. Schürrle,80,81,Midfielder,LM,26,Germany,Germany,Borussia Dortmund,17.5M,66K,83,82,74,80,38,70
+441,M. Gonalons,80,80,Midfielder,CDM,28,France,France,Roma,12M,71K,66,61,69,69,80,81
+442,R. Pereyra,80,83,Midfielder,CM,26,Argentina,Argentina,Watford,18M,69K,78,66,80,82,68,68
+443,K. Vogt,80,82,Defender,CB,25,Germany,Germany,TSG 1899 Hoffenheim,15M,40K,76,57,69,67,79,80
+444,F. Orellana,80,80,Midfielder,CAM,31,Chile,Chile,Valencia CF,13M,40K,80,73,76,83,32,50
+445,Maicon,80,80,Defender,CB,28,Brazil,Brazil,Galatasaray SK,12M,68K,63,55,65,54,81,83
+446,E. Salvio,80,80,Midfielder,RM,26,Argentina,Argentina,SL Benfica,16M,17K,87,74,74,80,44,70
+447,D. Blind,80,81,Defender,LB,27,Netherlands,Netherlands,Manchester United,13.5M,120K,60,56,79,75,80,76
+448,S. El Shaarawy,80,83,Attacker,LW,24,Italy,Italy,Roma,19M,71K,87,75,70,85,31,58
+449,M. Antonio,80,81,Attacker,ST,27,England,England,West Ham United,17.5M,120K,85,74,70,81,52,82
+450,Iago Falqué,80,80,Attacker,RW,27,Spain,Spain,Torino,15.5M,61K,79,72,78,85,35,57
+451,S. Rondón,80,80,Attacker,ST,27,Venezuela,Venezuela,West Bromwich Albion,16M,89K,75,76,56,74,31,80
+452,Daniel Carriço,80,81,Defender,CB,28,Portugal,Portugal,Sevilla FC,13.5M,23K,57,53,68,62,80,78
+453,M. Schmelzer,80,80,Defender,LB,29,Germany,Germany,Borussia Dortmund,11M,63K,80,51,69,66,79,79
+454,J. McCarthy,80,83,Midfielder,CDM,26,Republic of Ireland,Republic of Ireland,Everton,15.5M,110K,70,60,75,74,77,81
+455,A. Dzagoev,80,81,Midfielder,CM,27,Russia,Russia,CSKA Moscow,16.5M,57K,77,74,78,78,70,70
+456,Ganso,80,81,Midfielder,CAM,27,Brazil,Brazil,Sevilla FC,17M,24K,35,75,84,81,38,63
+457,F. Smolov,80,81,Attacker,ST,27,Russia,Russia,FC Krasnodar,17.5M,59K,87,80,70,77,32,73
+458,D. Welbeck,80,81,Attacker,ST,26,England,England,Arsenal,17.5M,130K,84,74,71,79,37,78
+459,Luiz Gustavo,80,80,Midfielder,CDM,29,Brazil,Brazil,Olympique de Marseille,11.5M,37K,64,59,68,69,80,80
+460,Mikel San José,80,80,Midfielder,CM,28,Spain,Spain,Athletic Club de Bilbao,14.5M,33K,43,70,70,70,79,78
+461,M. Darmian,80,81,Defender,LB,27,Italy,Italy,Manchester United,13.5M,120K,77,58,68,75,80,73
+462,R. Thomas,80,80,Defender,CB,29,France,France,Angers SCO,11.5M,32K,54,34,58,47,80,76
+463,I. Traoré,80,80,Midfielder,RM,29,Guinea,Guinea,Borussia Mönchengladbach,14.5M,48K,88,72,77,84,39,56
+464,Sidnei,80,82,Defender,CB,27,Brazil,Brazil,RC Deportivo de La Coruña,14.5M,29K,51,50,59,68,80,81
+465,J. Lens,80,80,Midfielder,RM,29,Netherlands,Netherlands,Beşiktaş JK,14.5M,17K,89,76,76,81,32,71
+466,Eder,80,80,Attacker,ST,30,Italy,Italy,Inter,14.5M,80K,85,80,73,83,25,63
+467,Kiko Casilla,80,80,Goalkeeper,GK,30,Spain,Spain,Real Madrid CF,9.5M,120K,75,83,80,77,41,82
+468,Nacho Monreal,80,80,Defender,LB,31,Spain,Spain,Arsenal,9.5M,110K,73,53,72,74,80,72
+469,S. Bender,80,81,Defender,CB,28,Germany,Germany,Bayer 04 Leverkusen,13.5M,59K,70,51,61,59,82,80
+470,M. Díaz,80,80,Midfielder,CM,30,Chile,Chile,U.N.A.M.,13.5M,31K,61,66,80,77,75,74
+471,A. Fernández,80,80,Midfielder,CM,31,Argentina,Argentina,Atlético Madrid,12.5M,62K,69,70,77,79,68,75
+472,M. Berg,80,80,Attacker,ST,30,Sweden,Sweden,,0,0,75,79,63,74,29,71
+473,I. Piatti,80,80,Attacker,LW,32,Argentina,Argentina,Montreal Impact,11.5M,14K,77,81,72,85,52,74
+474,V. Birsa,80,80,Midfielder,CAM,30,Slovenia,Slovenia,Chievo Verona,14M,25K,75,72,80,82,49,72
+475,Pedro León,80,80,Midfielder,RM,30,Spain,Spain,SD Eibar,14M,29K,67,76,83,82,40,62
+476,K. Boateng,80,80,Attacker,ST,30,Ghana,Ghana,Eintracht Frankfurt,14.5M,41K,73,77,77,80,67,78
+477,Marcano,80,80,Defender,CB,30,Spain,Spain,FC Porto,11M,18K,68,45,59,58,81,78
+478,H. Moreno,80,80,Defender,CB,29,Mexico,Mexico,Roma,11.5M,71K,66,49,65,62,81,75
+479,S. Romero,80,80,Goalkeeper,GK,30,Argentina,Argentina,Manchester United,9.5M,97K,78,76,81,82,45,78
+480,A. Candreva,80,80,Midfielder,RM,30,Italy,Italy,Inter,14M,74K,78,80,76,82,56,71
+481,D. Criscito,80,80,Defender,LB,30,Italy,Italy,Zenit St. Petersburg,10.5M,67K,77,61,75,72,78,79
+482,D. Wass,80,80,Midfielder,CM,28,Denmark,Denmark,RC Celta de Vigo,14.5M,33K,75,73,80,79,66,71
+483,Coke,80,80,Defender,RB,30,Spain,Spain,FC Schalke 04,10.5M,44K,75,63,70,74,79,72
+484,A. Guardado,80,80,Midfielder,CM,30,Mexico,Mexico,Real Betis Balompié,13.5M,32K,76,64,80,82,67,68
+485,J. dos Santos,80,81,Midfielder,CM,27,Mexico,Mexico,LA Galaxy,16.5M,13K,66,68,82,81,59,67
+486,E. Lamela,80,83,Midfielder,RM,25,Argentina,Argentina,Tottenham Hotspur,18.5M,96K,76,77,79,82,45,67
+487,R. Bertrand,80,80,Defender,LB,27,England,England,Southampton,12M,86K,79,53,71,77,79,75
+488,Renato Augusto,80,80,Midfielder,CM,29,Brazil,Brazil,,0,0,67,73,80,82,66,70
+489,Jardel,80,80,Defender,CB,31,Brazil,Brazil,SL Benfica,10M,16K,60,42,52,51,81,82
+490,V. Denisov,80,80,Defender,LB,30,Uzbekistan,Uzbekistan,Lokomotiv Moscow,10.5M,50K,83,51,67,71,79,79
+491,D. Basta,80,80,Defender,RB,32,Serbia,Serbia,Lazio,8M,54K,76,67,71,76,80,76
+492,G. Cabral,80,80,Defender,CB,31,Argentina,Argentina,RC Celta de Vigo,10M,29K,42,31,56,55,81,78
+493,G. Paletta,80,80,Defender,CB,31,Italy,Italy,Milan,10M,96K,51,33,42,53,83,82
+494,T. Walcott,80,80,Midfielder,RM,28,England,England,Arsenal,15M,125K,91,75,72,80,38,66
+495,L. Fabiański,80,80,Goalkeeper,GK,32,Poland,Poland,Swansea City,8.5M,60K,77,84,70,84,48,78
+496,B. Foster,80,80,Goalkeeper,GK,34,England,England,West Bromwich Albion,6M,60K,79,79,73,84,49,77
+497,V. Ibišević,80,80,Attacker,ST,32,Bosnia Herzegovina,Bosnia Herzegovina,Hertha BSC Berlin,12M,41K,53,80,68,72,31,76
+498,K. El Ahmadi,80,80,Midfielder,CM,32,Morocco,Morocco,Feyenoord,11M,23K,65,62,74,76,72,78

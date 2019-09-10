@@ -1,0 +1,1 @@
+This project is best viewed in 1920x1080 screen size.
